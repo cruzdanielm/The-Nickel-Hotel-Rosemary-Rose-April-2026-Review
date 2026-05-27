@@ -1,0 +1,2259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Nickel Hotel · April 2026 Recap &amp; May–Jul 2026 Forecast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E1F40;
+    --navy-deep:#081530;
+    --navy-soft:#1B2F55;
+    --cream:#ECEFF7;
+    --sand:#5B7FA8;
+    --sand-deep:#3A5E85;
+    --ink:#1A1A1A;
+    --ink-soft:#4A4A4A;
+    --muted:#8A8E9B;
+    --line:#DCE0EC;
+    --softcream:#F2F4FB;
+    --good:#5A8F6B;
+    --bad:#B4533C;
+    --serif:"Cormorant Garamond","Garamond","Times New Roman",serif;
+    --sans:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;}
+  html,body{margin:0;padding:0;background:#F7F8FC;color:var(--ink);
+    font-family:var(--sans);font-weight:400;line-height:1.55;
+    -webkit-font-smoothing:antialiased;}
+  .hero,.sectionband{scroll-margin-top:64px;}
+
+  .topnav{position:sticky;top:0;z-index:50;background:var(--navy);color:var(--cream);
+    border-bottom:2px solid var(--sand);box-shadow:0 1px 3px rgba(8,21,48,.18);}
+  .topnav-inner{max-width:1180px;margin:0 auto;padding:10px 24px;display:flex;
+    align-items:center;gap:18px;flex-wrap:wrap;}
+  .topnav .brand{font-family:var(--serif);font-size:14px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);flex-shrink:0;}
+  .topnav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:2px;flex:1;}
+  .topnav li{display:inline-block;}
+  .topnav a{display:inline-block;color:rgba(241,236,224,.86);text-decoration:none;
+    padding:6px 10px;font-size:11.5px;letter-spacing:.04em;border-radius:2px;
+    transition:background .15s ease,color .15s ease;font-weight:500;}
+  .topnav a:hover{background:rgba(201,169,106,.18);color:var(--cream);}
+  .topnav a.top-link{color:var(--sand);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:11px;}
+  .topnav a.top-link:hover{background:rgba(201,169,106,.22);color:var(--sand);}
+  @media(max-width:820px){
+    .topnav-inner{padding:8px 16px;gap:8px;}
+    .topnav a{padding:5px 8px;font-size:11px;}
+  }
+
+  .backtotop-float{position:fixed;right:20px;bottom:20px;z-index:60;
+    display:inline-flex;align-items:center;justify-content:center;
+    width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--cream);
+    text-decoration:none;box-shadow:0 4px 14px rgba(8,21,48,.30);
+    font-size:16px;font-weight:700;transition:background .15s,transform .15s;}
+  .backtotop-float:hover{background:var(--sand);color:var(--navy-deep);transform:translateY(-2px);}
+  .backtotop-float::before{content:"↑";}
+
+  .toc{padding:48px 64px 16px;background:var(--cream);border-bottom:1px solid var(--line);}
+  .toc .kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--sand-deep);font-weight:600;margin-bottom:6px;}
+  .toc h2{font-family:var(--serif);font-size:36px;font-weight:300;color:var(--navy-deep);margin:0 0 8px;letter-spacing:-.005em;line-height:1.1;}
+  .toc .sub{color:var(--muted);font-size:13px;margin-bottom:26px;font-style:italic;}
+  .toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;padding-bottom:26px;}
+  .toc-item{display:flex;align-items:flex-start;gap:16px;padding:14px 16px;border:1px solid var(--line);border-radius:2px;text-decoration:none;color:var(--ink);background:#fff;transition:border-color .15s,background .15s,transform .15s;}
+  .toc-item:hover{border-color:var(--sand);background:#E5EAF5;transform:translateX(2px);}
+  .toc-item .num{font-family:var(--serif);font-size:24px;font-weight:300;color:var(--sand);min-width:34px;line-height:1;padding-top:2px;}
+  .toc-item .body{flex:1;}
+  .toc-item .name{font-size:14px;font-weight:600;color:var(--navy-deep);line-height:1.3;letter-spacing:.005em;}
+  .toc-item .desc{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.45;}
+
+  .backtocontents-wrap{text-align:center;padding:18px 56px 8px;background:var(--cream);}
+  .backtocontents{display:inline-flex;align-items:center;gap:6px;font-size:11px;
+    color:var(--navy);text-decoration:none;letter-spacing:.12em;text-transform:uppercase;
+    font-weight:600;padding:7px 16px;border:1px solid var(--line);border-radius:2px;
+    background:#fff;transition:background .15s,color .15s,border-color .15s;}
+  .backtocontents:hover{background:var(--navy);color:var(--cream);border-color:var(--navy);}
+  .backtocontents::before{content:"↑";margin-right:2px;}
+
+  @media print{
+    @page{margin:0.5in;}
+    html,body{background:#fff;scroll-behavior:auto;}
+    .topnav,.backtotop-float,.print-help{display:none !important;}
+    .report{box-shadow:none;max-width:100%;margin:0;}
+    *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;color-adjust:exact !important;}
+    .hero,.sectionband,.toc,section.part,[id^="section-"],#contents,#top{scroll-margin-top:0 !important;}
+    .hero,.sectionband,.toc{page-break-inside:avoid;break-inside:avoid;}
+    .kpi-row,.platforms,.outlets,.take,.bench,.losgrid,.toc-grid,.toc-item,.outlet,.bmk,.kpi,.platform,.cat{break-inside:avoid;page-break-inside:avoid;}
+    section.part{break-inside:auto;}
+    a{color:var(--sand-deep) !important;text-decoration:none !important;}
+    .toc-item{color:inherit !important;}
+    .toc-item:hover{background:#fff;transform:none;border-color:var(--line);}
+    .backtocontents-wrap{padding:10px 56px 0;}
+    .backtocontents{display:inline-block;color:var(--navy) !important;border:1px solid var(--line);}
+  }
+  a{color:var(--sand-deep);}
+  .report{max-width:1180px;margin:0 auto;background:var(--cream);box-shadow:0 1px 2px rgba(8,21,48,.05),0 14px 44px rgba(8,21,48,.10);}
+
+  .hero{background:var(--navy);color:var(--cream);padding:72px 64px 64px;position:relative;overflow:hidden;}
+  .hero::before{content:"";position:absolute;left:0;top:0;bottom:0;width:54px;background:var(--navy-deep);}
+  .hero .sidebar-label{position:absolute;left:16px;top:50%;transform:translateY(-50%) rotate(180deg);
+    writing-mode:vertical-rl;
+    font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--sand);font-weight:600;white-space:nowrap;line-height:1;}
+  .hero-inner{padding-left:50px;}
+  .hero .meta{position:absolute;right:64px;top:64px;color:rgba(241,236,224,.65);font-size:11px;text-align:right;letter-spacing:.16em;text-transform:uppercase;font-weight:500;line-height:1.7;}
+  .hero .eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--sand);font-weight:600;}
+  .hero h1{font-family:var(--serif);font-size:64px;font-weight:300;margin:18px 0 8px;letter-spacing:-.015em;line-height:1.02;color:var(--cream);}
+  .hero h1 .em{font-style:italic;font-weight:400;color:var(--sand);}
+  .hero .sub{font-family:var(--serif);color:rgba(241,236,224,.84);font-size:20px;font-weight:300;font-style:italic;max-width:720px;line-height:1.4;}
+  .hero .rule{width:64px;height:1px;background:var(--sand);margin:28px 0 22px;}
+  .hero .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .hero .chip{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);
+    border:1px solid rgba(201,169,106,.55);border-radius:0;padding:7px 14px;font-weight:500;}
+  .hero .stamp{position:absolute;right:64px;bottom:64px;text-align:right;color:rgba(241,236,224,.55);font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;}
+  .hero .stamp .lg{font-family:var(--serif);font-size:20px;color:var(--sand);font-weight:400;letter-spacing:.04em;display:block;margin-bottom:4px;text-transform:none;font-style:italic;}
+
+  section.part{padding:52px 64px;border-bottom:1px solid var(--line);background:var(--cream);}
+  section.part:last-of-type{border-bottom:none;}
+  .kicker{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sand-deep);font-weight:600;margin-bottom:8px;}
+  h2.ph{font-family:var(--serif);font-size:34px;font-weight:300;color:var(--navy-deep);margin:0 0 8px;letter-spacing:-.01em;line-height:1.15;}
+  h2.ph .em{font-style:italic;color:var(--sand-deep);}
+  .plede{color:var(--ink-soft);font-size:14px;max-width:780px;margin-bottom:26px;line-height:1.65;}
+
+  .tldr{background:var(--softcream);border-left:3px solid var(--sand);padding:18px 22px;border-radius:0;margin:22px 0 0;}
+  .tldr .tag{font-size:10.5px;letter-spacing:.22em;color:var(--sand-deep);font-weight:600;text-transform:uppercase;}
+  .tldr p{margin:6px 0 0;color:var(--ink);font-size:14px;line-height:1.65;}
+
+  .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:6px 0 12px;}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:0;padding:22px 22px 18px;text-align:left;border-top:2px solid var(--sand);}
+  .kpi .lbl{font-size:10.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+  .kpi .val{font-family:var(--serif);font-size:48px;font-weight:300;color:var(--sand-deep);line-height:1;margin:14px 0 6px;letter-spacing:-.01em;}
+  .kpi .delta{font-size:12px;font-weight:600;color:var(--good);}
+  .kpi .delta.dn{color:var(--bad);}
+  .kpi .delta.neu{color:var(--muted);}
+  .kpi .sub{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
+
+  .platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .platform{background:#fff;border:1px solid var(--line);border-radius:0;padding:26px 22px 22px;text-align:center;border-top:2px solid var(--sand);}
+  .platform .name{font-size:13px;color:var(--navy-deep);font-weight:600;letter-spacing:.06em;text-transform:uppercase;}
+  .platform .val{font-family:var(--serif);font-size:64px;font-weight:300;color:var(--sand-deep);line-height:1;margin:12px 0 4px;}
+  .platform .stars{color:var(--sand);font-size:14px;letter-spacing:3px;}
+  .platform .scale{font-size:11px;color:var(--muted);margin-top:6px;}
+  .platform .rank{margin-top:14px;font-size:12px;color:var(--navy-deep);font-weight:600;}
+  .platform .note{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5;}
+
+  .two{display:grid;grid-template-columns:2fr 1fr;gap:24px;}
+  .two.flip{grid-template-columns:1fr 2fr;}
+  .two.half{grid-template-columns:1fr 1fr;gap:20px;}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:0;padding:24px 26px;}
+  .card h3{margin:0 0 6px;font-size:10.5px;color:var(--sand-deep);font-weight:600;letter-spacing:.18em;text-transform:uppercase;}
+  .card h2{font-family:var(--serif);margin:0 0 16px;font-size:22px;color:var(--navy-deep);font-weight:400;line-height:1.3;letter-spacing:-.005em;}
+  .card.dark{background:var(--navy);color:var(--cream);border-color:var(--navy);}
+  .card.dark h2{color:var(--cream);}
+  .card.dark h3{color:var(--sand);}
+  .card.dark p, .card.dark li{color:rgba(241,236,224,.92);}
+
+  .card ul{margin:0;padding:0;list-style:none;}
+  .card ul li{position:relative;padding:7px 0 7px 18px;font-size:13px;line-height:1.55;}
+  .card ul li::before{content:"";position:absolute;left:0;top:14px;width:5px;height:5px;border-radius:50%;background:var(--sand);}
+
+  table.data{width:100%;border-collapse:collapse;font-size:13px;}
+  table.data thead th{color:var(--navy-deep);border-bottom:1.5px solid var(--navy);font-weight:600;padding:10px 10px;text-align:right;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;font-family:var(--sans);}
+  table.data thead th:first-child{text-align:left;}
+  table.data tbody td{padding:10px 10px;border-bottom:1px solid var(--line);text-align:right;}
+  table.data tbody td:first-child{text-align:left;}
+  table.data tbody tr:last-child td{border-bottom:none;}
+  table.data .pos{color:var(--good);font-weight:600;}
+  table.data .neg{color:var(--bad);font-weight:600;}
+  table.data .neu{color:var(--muted);}
+  table.data tr.us td{background:#F4EBD8;color:var(--sand-deep);font-weight:600;}
+  table.data tr.total td{background:var(--softcream);border-top:2px solid var(--navy);font-weight:600;color:var(--navy-deep);}
+  table.data tr.subtotal td{background:#FBF8F0;border-top:1px solid var(--sand);font-weight:600;color:var(--navy-deep);}
+
+  .hbars{display:grid;gap:10px;}
+  .hbar{display:grid;grid-template-columns:200px 1fr 70px;align-items:center;gap:12px;font-size:13px;}
+  .hbar .hname{color:var(--ink);font-weight:500;}
+  .hbar .htrack{background:var(--softcream);height:20px;border-radius:0;border:1px solid var(--line);}
+  .hbar .hfill{height:100%;background:var(--navy);border-radius:0;}
+  .hbar.us .hfill{background:var(--sand);}
+  .hbar.us .hname{color:var(--sand-deep);font-weight:700;}
+  .hbar .hval{font-weight:600;text-align:right;color:var(--navy-deep);}
+
+  .stacked{display:grid;gap:14px;}
+  .sbar{display:grid;grid-template-columns:96px 1fr;align-items:center;gap:14px;}
+  .sbar .slabel{font-size:10.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+  .sbar .strack{height:30px;display:flex;border-radius:0;overflow:hidden;}
+  .sbar .seg{display:flex;align-items:center;justify-content:center;color:#fff;font-size:11.5px;font-weight:600;}
+  .seg.prom{background:var(--navy);}
+  .seg.pass{background:#A8B0C2;color:var(--ink);}
+  .seg.det{background:var(--bad);}
+  .legend{display:flex;gap:18px;margin-top:14px;font-size:11px;color:var(--muted);}
+  .legend span::before{content:"";display:inline-block;width:10px;height:10px;margin-right:6px;border-radius:0;vertical-align:baseline;}
+  .legend .l-prom::before{background:var(--navy);}
+  .legend .l-pass::before{background:#A8B0C2;}
+  .legend .l-det::before{background:var(--bad);}
+
+  .nps-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:14px 0;}
+  .nps-circle{width:170px;height:170px;border-radius:50%;background:var(--navy);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;border:3px solid var(--sand);}
+  .nps-circle .big{font-family:var(--serif);font-size:64px;font-weight:300;line-height:1;color:var(--sand);}
+  .nps-circle .cap{font-size:11px;font-weight:600;letter-spacing:.22em;margin-top:4px;color:var(--cream);}
+  .nps-delta{color:var(--good);font-weight:600;font-size:13px;margin-top:4px;}
+  .nps-note{font-size:11px;color:var(--muted);line-height:1.55;max-width:280px;}
+
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .cat{background:#fff;border:1px solid var(--line);border-radius:0;padding:18px 20px;position:relative;border-top:2px solid var(--line);}
+  .cat .rank{position:absolute;top:14px;right:14px;background:var(--muted);color:#fff;font-size:9.5px;font-weight:600;padding:3px 9px;border-radius:999px;letter-spacing:.1em;text-transform:uppercase;}
+  .cat.win{border-top-color:var(--good);}
+  .cat.win .rank{background:var(--good);}
+  .cat.mid{border-top-color:var(--sand);}
+  .cat.mid .rank{background:var(--sand-deep);}
+  .cat.bad{border-top-color:var(--bad);}
+  .cat.bad .rank{background:var(--bad);}
+  .cat .nm{font-size:10px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+  .cat .sc{font-family:var(--serif);font-size:38px;font-weight:300;color:var(--sand-deep);line-height:1;margin:10px 0 6px;}
+  .cat .cm{font-size:11px;color:var(--muted);}
+
+  .sectionband{background:var(--navy);color:var(--cream);padding:42px 64px;display:flex;justify-content:space-between;align-items:center;position:relative;overflow:hidden;}
+  .sectionband::before{content:"";position:absolute;left:0;top:0;bottom:0;width:54px;background:var(--navy-deep);}
+  .sectionband .sidebar-num{position:absolute;left:14px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;
+    font-family:var(--serif);font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--sand);font-weight:500;white-space:nowrap;}
+  .sectionband .sb-inner{padding-left:54px;}
+  .sectionband .lbl{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--sand);font-weight:600;}
+  .sectionband h2{font-family:var(--serif);margin:8px 0 0;font-size:38px;font-weight:300;letter-spacing:-.005em;color:var(--cream);}
+  .sectionband .right{color:rgba(241,236,224,.65);font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-align:right;line-height:1.7;}
+
+  .fvb-chart{background:#fff;border:1px solid var(--line);border-radius:0;padding:26px 28px 18px;position:relative;}
+  .fvb-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:18px;flex-wrap:wrap;}
+  .fvb-head .left{flex:1;min-width:260px;}
+  .fvb-head .ckicker{font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-bottom:6px;}
+  .fvb-head h2{font-family:var(--serif);margin:0;font-size:22px;color:var(--navy-deep);font-weight:400;line-height:1.3;letter-spacing:-.005em;}
+  .fvb-head .sub{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic;}
+  .fvb-summary{display:grid;grid-template-columns:repeat(3,auto);gap:0;border:1px solid var(--line);border-radius:0;background:var(--cream);overflow:hidden;}
+  .fvb-summary .cell{padding:10px 16px;border-right:1px solid var(--line);text-align:center;min-width:120px;}
+  .fvb-summary .cell:last-child{border-right:none;}
+  .fvb-summary .clbl{font-size:9.5px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;font-weight:600;}
+  .fvb-summary .cval{font-family:var(--serif);font-size:18px;color:var(--navy-deep);font-weight:500;margin-top:4px;}
+  .fvb-summary .cval.pos{color:var(--good);}
+  .fvb-summary .cval.neg{color:var(--bad);}
+
+  .fvb-plot{position:relative;padding:40px 50px 50px;height:340px;}
+  .fvb-grid{position:absolute;left:50px;right:50px;top:40px;bottom:50px;}
+  .fvb-gridline{position:absolute;left:0;right:0;border-top:1px dashed var(--line);height:0;}
+  .fvb-ylabel{position:absolute;left:-50px;font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.04em;transform:translateY(-50%);}
+  .fvb-axis{position:absolute;left:0;right:0;bottom:0;border-top:1px solid var(--navy-soft);}
+  .fvb-cols{position:absolute;left:0;right:0;top:0;bottom:0;display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:end;}
+  .fvb-col{display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end;position:relative;}
+  .fvb-bars{display:flex;align-items:flex-end;gap:4px;height:100%;width:100%;justify-content:center;}
+  .fvb-bar{width:42%;min-width:10px;border-radius:0;}
+  .fvb-bar.forecast{background:var(--sand);}
+  .fvb-bar.actual{background:var(--navy);}
+  .fvb-bar.budget{background:#CCD3E2;}
+  .fvb-mlabel{position:absolute;bottom:-32px;left:0;right:0;text-align:center;font-size:11.5px;font-weight:600;color:var(--navy-deep);letter-spacing:.04em;font-family:var(--serif);}
+  .fvb-mlabel .phase{display:block;font-family:var(--sans);font-size:8.5px;color:var(--muted);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:3px;}
+  .fvb-legend{display:flex;gap:18px;margin-top:16px;justify-content:flex-end;font-size:11px;color:var(--muted);}
+  .fvb-legend span{display:flex;align-items:center;}
+  .fvb-legend span::before{content:"";display:inline-block;width:10px;height:10px;margin-right:6px;border-radius:0;}
+  .fvb-legend .lgd-actual::before{background:var(--navy);}
+  .fvb-legend .lgd-forecast::before{background:var(--sand);}
+  .fvb-legend .lgd-budget::before{background:#CCD3E2;}
+  .fvb-footer{font-size:11px;color:var(--muted);margin-top:14px;font-style:italic;border-top:1px solid var(--line);padding-top:12px;line-height:1.6;}
+
+  .outlets{display:grid;grid-template-columns:1fr;gap:16px;}
+  .outlet{background:#fff;border:1px solid var(--line);border-radius:0;padding:24px 28px;position:relative;}
+  .outlet::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--sand);}
+  .outlet.good::before{background:var(--good);}
+  .outlet.warn::before{background:#D4A017;}
+  .outlet.bad::before{background:var(--bad);}
+  .outlet-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px;flex-wrap:wrap;gap:14px;}
+  .outlet-head .name{font-family:var(--serif);font-size:24px;font-weight:400;color:var(--navy-deep);letter-spacing:-.005em;}
+  .outlet-head .name .em{font-style:italic;color:var(--sand-deep);}
+  .outlet-head .rev{font-family:var(--serif);font-size:30px;font-weight:300;color:var(--sand-deep);line-height:1;}
+  .outlet-head .rev small{font-family:var(--sans);font-size:11px;color:var(--muted);font-weight:500;margin-left:6px;letter-spacing:.06em;text-transform:uppercase;}
+  .outlet-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .om{font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;font-weight:600;}
+  .ov{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--navy-deep);margin-top:4px;line-height:1;}
+  .ov.pos{color:var(--good);} .ov.neg{color:var(--bad);} .ov.mid{color:var(--sand-deep);}
+  .od{font-size:11px;color:var(--muted);margin-top:4px;font-weight:500;}
+  .od.pos{color:var(--good);} .od.neg{color:var(--bad);}
+  .outlet .note{font-size:11.5px;color:var(--muted);margin-top:14px;font-style:italic;line-height:1.5;border-top:1px dashed var(--line);padding-top:10px;}
+
+  .take{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .take .t{background:#fff;border:1px solid var(--line);border-radius:0;padding:18px 20px;border-top:3px solid var(--sand);}
+  .take .t.g{border-top-color:var(--good);}
+  .take .t.w{border-top-color:var(--navy);}
+  .take .t.i{border-top-color:#A8B0C2;}
+  .take .t h4{margin:0 0 8px;font-size:10.5px;color:var(--sand-deep);letter-spacing:.16em;text-transform:uppercase;font-weight:600;}
+  .take .t.g h4{color:var(--good);}
+  .take .t.w h4{color:var(--navy);}
+  .take .t.i h4{color:var(--muted);}
+  .take .t p{margin:0;font-size:13px;line-height:1.6;}
+
+  .trendchart{background:#fff;border:1px solid var(--line);padding:22px 24px;}
+  .trendchart .thd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:14px;}
+  .trendchart .thd-l .ck{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .trendchart .thd-l h2{font-family:var(--serif);margin:4px 0 0;font-size:20px;color:var(--navy-deep);font-weight:400;}
+  .trendchart .thd-r{font-size:11px;color:var(--muted);font-style:italic;}
+  .trplot{position:relative;height:180px;padding:14px 0 30px;}
+  .trgrid{position:absolute;left:0;right:0;top:14px;bottom:30px;}
+  .trgrid .gl{position:absolute;left:0;right:0;border-top:1px dashed var(--line);}
+  .trbars{position:absolute;left:0;right:0;top:14px;bottom:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end;}
+  .trbar{display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end;position:relative;}
+  .trbar .bar{width:60%;background:var(--sand);border-radius:0;}
+  .trbar .v{position:absolute;top:-22px;font-family:var(--serif);font-size:18px;color:var(--sand-deep);font-weight:400;}
+  .trbar .lbl{position:absolute;bottom:-26px;font-size:11px;font-weight:600;color:var(--navy-deep);letter-spacing:.04em;}
+
+  .bench{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .bmk{background:#fff;border:1px solid var(--line);border-radius:0;padding:18px 20px;position:relative;border-top:2px solid var(--sand);}
+  .bmk .bname{font-size:10.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+  .bmk .bval{font-family:var(--serif);font-size:34px;font-weight:300;color:var(--sand-deep);line-height:1;margin:10px 0 4px;}
+  .bmk .bbench{font-size:11px;color:var(--ink-soft);line-height:1.6;}
+  .bmk .bstatus{margin-top:10px;display:inline-block;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:0;}
+  .bmk .bstatus.good{background:#E7F1EA;color:var(--good);}
+  .bmk .bstatus.mid{background:#F4EBD8;color:var(--sand-deep);}
+  .bmk .bstatus.bad{background:#F9E4DE;color:var(--bad);}
+
+  .priocards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .prio{background:#fff;border:1px solid var(--line);padding:24px 26px;position:relative;}
+  .prio::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--sand);}
+  .prio h3{margin:0 0 4px;font-size:10.5px;color:var(--sand-deep);letter-spacing:.18em;text-transform:uppercase;font-weight:600;}
+  .prio h2{font-family:var(--serif);margin:0 0 12px;font-size:22px;color:var(--navy-deep);font-weight:400;line-height:1.25;}
+  .prio p{font-size:13px;line-height:1.65;color:var(--ink-soft);margin:0 0 8px;}
+  .prio .meta{font-size:11px;color:var(--muted);margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-style:italic;}
+
+  .dowgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;}
+  .dowtile{background:#fff;border:1px solid var(--line);padding:14px 12px;text-align:center;}
+  .dowtile.peak{background:#FBF6E8;border-color:var(--sand);border-top:3px solid var(--sand);}
+  .dowtile.soft{background:#EAF1F8;border-color:#9FB8D6;border-top:3px solid #2E5C8A;}
+  .dowtile.soft .occ{color:#1F4267;}
+  .dowtile.soft .rp{color:#2E5C8A;}
+  .dowtile .d{font-size:10px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;font-weight:600;}
+  .dowtile .occ{font-family:var(--serif);font-size:22px;color:var(--navy-deep);font-weight:400;margin:8px 0 2px;line-height:1;}
+  .dowtile .adr{font-size:11px;color:var(--ink-soft);font-weight:500;}
+  .dowtile .rp{font-size:11px;color:var(--sand-deep);font-weight:600;margin-top:4px;}
+
+  .mkt-stub{background:#fff;border:1px solid var(--line);padding:48px;text-align:center;border-top:3px solid var(--sand);}
+  .mkt-stub h2{font-family:var(--serif);font-size:28px;color:var(--navy-deep);margin:0 0 12px;font-weight:300;}
+  .mkt-stub p{color:var(--muted);font-size:13px;font-style:italic;max-width:540px;margin:0 auto;line-height:1.7;}
+
+  /* ===== Marketing Section 10 — 12-col grid system ===== */
+  :root{ --coral:#C97A5A; --coral-tint:#FBF1EB; }
+
+  .mkt-block{margin-top:48px;}
+  .mkt-block:first-of-type{margin-top:8px;}
+  .mkt-sub-kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--sand-deep);font-weight:600;margin:0 0 6px;}
+  h3.mkt-sub{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--navy-deep);margin:0 0 12px;letter-spacing:-.005em;line-height:1.25;}
+  .mkt-block .lede{color:var(--ink-soft);font-size:13.5px;max-width:780px;margin:0 0 22px;line-height:1.6;}
+
+  .mkt-grid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:24px;
+  }
+  .mkt-grid .col-3 {grid-column:span 3;}
+  .mkt-grid .col-4 {grid-column:span 4;}
+  .mkt-grid .col-6 {grid-column:span 6;}
+  .mkt-grid .col-12{grid-column:span 12;}
+  /* Asset rendering — full-res, no crop */
+  .mkt-grid img, .mkt-grid video{
+    margin:0;padding:0;display:block;
+    width:100%;height:auto;
+    object-fit:contain;
+    image-rendering:-webkit-optimize-contrast;
+  }
+
+  /* Image card — natural height, full-resolution */
+  .mkt-asset{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    overflow:hidden;
+  }
+  .mkt-asset img{width:100%;height:auto;display:block;}
+
+  /* Asset caption — 12px italic centered slate-gray */
+  .mkt-cap{
+    margin-top:8px;
+    font-size:12px;
+    color:var(--sand-deep);
+    text-align:center;
+    font-style:italic;
+    letter-spacing:.02em;
+    line-height:1.3;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  /* Video frame — fixed 280×498 9:16 */
+  .mkt-vidframe{
+    width:280px;height:498px;
+    border:2px solid var(--coral);
+    position:relative;
+    box-shadow:0 8px 24px rgba(8,21,48,.18);
+    background:#000;
+    margin:0 auto;
+  }
+  .mkt-vidframe video{
+    width:100%;height:100%;object-fit:cover;
+  }
+  .mkt-vidframe::before{
+    content:"▶ VIDEO";
+    position:absolute;top:8px;left:8px;z-index:2;
+    background:var(--coral);color:#fff;
+    font-size:9px;font-weight:700;letter-spacing:.14em;
+    padding:4px 10px;border-radius:999px;
+    font-family:var(--sans);
+  }
+
+  /* Video cell — center the 280×498 frame within its column with coral-tint panel */
+  .mkt-vid-cell{
+    background:var(--coral-tint);
+    border:1px solid var(--line);
+    border-top:2px solid var(--coral);
+    padding:24px;
+    height:560px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .mkt-vid-cell.with-meta{
+    justify-content:flex-end;
+    gap:24px;
+  }
+  .mkt-vid-cell.with-meta .meta{
+    flex:1;min-width:0;
+    text-align:left;
+  }
+  .mkt-vid-cell .meta .lbl{font-size:11px;color:var(--coral);letter-spacing:.22em;text-transform:uppercase;font-weight:700;}
+  .mkt-vid-cell .meta h4{font-family:var(--serif);font-size:24px;color:var(--navy-deep);margin:6px 0 10px;font-weight:400;letter-spacing:-.005em;}
+  .mkt-vid-cell .meta p{font-size:13px;color:var(--ink-soft);line-height:1.55;margin:0;}
+
+  /* 10D solo hero — full-width, slate background, 320×568 frame */
+  .mkt-vid-hero{
+    background:var(--navy);
+    color:var(--cream);
+    padding:48px 36px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    border-top:2px solid var(--coral);
+    position:relative;
+  }
+  .mkt-vid-hero .h-meta{text-align:center;margin-bottom:8px;}
+  .mkt-vid-hero .h-meta .lbl{font-size:11px;color:var(--coral);letter-spacing:.26em;text-transform:uppercase;font-weight:700;}
+  .mkt-vid-hero .h-meta h4{font-family:var(--serif);font-size:26px;color:var(--cream);margin:8px 0 0;font-weight:400;letter-spacing:-.005em;}
+  .mkt-vid-hero .h-meta .spend{font-size:11.5px;color:rgba(241,236,224,.7);margin-top:6px;font-style:italic;}
+  .mkt-vidframe-lg{
+    width:320px;height:568px;
+    border:2px solid var(--coral);
+    position:relative;
+    box-shadow:0 14px 36px rgba(0,0,0,.45);
+    background:#000;
+  }
+  .mkt-vidframe-lg video{width:100%;height:100%;object-fit:cover;}
+  .mkt-vidframe-lg::before{
+    content:"▶ VIDEO";
+    position:absolute;top:10px;left:10px;z-index:2;
+    background:var(--coral);color:#fff;
+    font-size:10px;font-weight:700;letter-spacing:.14em;
+    padding:5px 12px;border-radius:999px;
+    font-family:var(--sans);
+  }
+  .mkt-vid-hero .h-cap{font-size:11.5px;color:rgba(241,236,224,.75);font-style:italic;letter-spacing:.04em;margin-top:6px;}
+
+  /* Email KPI cell (renders inside col-3) */
+  .mkt-kpi-cell{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    padding:22px 22px 20px;
+    min-height:170px;
+    height:100%;
+  }
+  .mkt-kpi-cell .lbl{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .mkt-kpi-cell .val{font-family:var(--serif);font-size:36px;color:var(--sand-deep);font-weight:300;line-height:1;margin:12px 0 6px;letter-spacing:-.01em;}
+  .mkt-kpi-cell .sub{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.45;}
+  .mkt-kpi-cell .delta{font-size:11px;color:var(--good);font-weight:600;margin-top:6px;}
+
+  /* Press card — natural height, full-resolution image */
+  .mkt-press-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    display:flex;flex-direction:column;
+  }
+  .mkt-press-card .pbody{padding:14px;}
+  .mkt-press-card .pbody img{width:100%;height:auto;display:block;}
+  .mkt-press-card .pcap{padding:14px 18px;border-top:1px solid var(--line);background:var(--softcream);}
+  .mkt-press-card .pcap .pub{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sand-deep);font-weight:700;}
+  .mkt-press-card .pcap .nm{font-family:var(--serif);font-size:17px;color:var(--navy-deep);font-weight:400;margin-top:4px;}
+  .mkt-press-card .pcap .dt{font-size:11px;color:var(--muted);margin-top:4px;}
+
+  /* Stats card for 10H */
+  .mkt-stats-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    padding:24px 26px;
+  }
+  .mkt-stats-card .handle{font-family:var(--serif);font-size:22px;color:var(--navy-deep);font-weight:400;margin-bottom:4px;letter-spacing:-.005em;}
+  .mkt-stats-card .handle .em{font-style:italic;color:var(--sand-deep);}
+  .mkt-stats-card .meta{font-size:11px;color:var(--muted);letter-spacing:.04em;margin-bottom:18px;}
+  .mkt-stats-card table{width:100%;border-collapse:collapse;font-size:13px;}
+  .mkt-stats-card table td{padding:9px 0;border-bottom:1px solid var(--line);}
+  .mkt-stats-card table td:last-child{text-align:right;font-weight:600;font-family:var(--serif);font-size:18px;color:var(--sand-deep);}
+  .mkt-stats-card table tr:last-child td{border-bottom:none;}
+
+  /* Square crop for social feed strip — same content type, uniform crop OK */
+  .mkt-feed-square{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    overflow:hidden;
+    aspect-ratio:1/1;
+    width:100%;
+  }
+  .mkt-grid .mkt-feed-square img{
+    width:100%;height:100%;object-fit:cover;
+  }
+
+  /* IG Story cell — 9:16, designed for that frame, uniform crop OK */
+  .mkt-story-cell{
+    background:#000;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    overflow:hidden;
+    aspect-ratio:9/16;
+  }
+  .mkt-grid .mkt-story-cell img{
+    width:100%;height:100%;object-fit:cover;
+  }
+
+  /* Calendar wrapper — natural height, full-resolution */
+  .mkt-cal-wrap{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:2px solid var(--sand);
+    display:flex;flex-direction:column;
+  }
+  .mkt-cal-wrap .qh{padding:12px 16px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--sand-deep);font-weight:600;border-bottom:1px solid var(--line);background:var(--softcream);}
+  .mkt-cal-wrap img{width:100%;height:auto;display:block;}
+
+  @media(max-width:820px){
+    .mkt-grid .col-3,.mkt-grid .col-4,.mkt-grid .col-6{grid-column:span 12;}
+    .mkt-vid-cell{height:auto;flex-direction:column;}
+    .mkt-press-card{height:auto;}
+  }
+
+  /* ===== 10·HERO — Two-video creative row ===== */
+  .mkt-hero{
+    background:var(--navy);
+    color:var(--cream);
+    padding:48px 36px;
+    border-top:2px solid var(--coral);
+    position:relative;
+  }
+  .mkt-hero-head{text-align:center;margin-bottom:32px;}
+  .mkt-hero-head .lbl{font-size:11px;color:var(--coral);letter-spacing:.26em;text-transform:uppercase;font-weight:700;}
+  .mkt-hero-head h3{font-family:var(--serif);font-size:28px;color:var(--cream);margin:8px 0 0;font-weight:400;letter-spacing:-.005em;}
+  .mkt-hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+    align-items:start;
+  }
+  .mkt-hero-item{display:flex;flex-direction:column;align-items:center;gap:18px;}
+  .mkt-hero-item .frame-wrap{
+    width:320px;height:568px;
+    border:2px solid var(--coral);
+    position:relative;
+    box-shadow:0 14px 36px rgba(0,0,0,.45);
+    background:#000;
+    margin:0;
+  }
+  .mkt-hero-item .frame-wrap video{
+    width:100%;height:100%;object-fit:cover;display:block;
+  }
+  .mkt-hero-item .frame-wrap::before{
+    content:"▶ VIDEO";
+    position:absolute;top:10px;left:10px;z-index:2;
+    background:var(--coral);color:#fff;
+    font-size:10px;font-weight:700;letter-spacing:.14em;
+    padding:5px 12px;border-radius:999px;
+    font-family:var(--sans);
+  }
+  .mkt-hero-item .caption-block{
+    text-align:center;max-width:320px;
+  }
+  .mkt-hero-item .caption-block .nm{
+    font-family:var(--serif);font-size:20px;color:var(--cream);font-weight:400;margin:0 0 6px;
+  }
+  .mkt-hero-item .caption-block .placement{
+    font-size:11px;color:var(--coral);letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:8px;
+  }
+  .mkt-hero-item .caption-block .results{
+    font-size:12px;color:rgba(241,236,224,.78);line-height:1.5;font-style:italic;
+  }
+  .mkt-hero-item .unmute-cap{
+    font-size:11px;color:rgba(241,236,224,.65);font-style:italic;letter-spacing:.04em;
+  }
+
+  /* Coming soon poster for empty hero slot */
+  .mkt-hero-item .coming-soon{
+    width:320px;height:568px;
+    border:2px dashed var(--coral);
+    background:rgba(201,122,90,.08);
+    color:var(--cream);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-size:20px;font-weight:400;letter-spacing:.06em;
+    margin:0;
+  }
+
+  /* Print QR fallback (hidden on screen, shown in print) */
+  .mkt-hero-qr{
+    display:none;
+  }
+  .mkt-hero-qr img{width:140px;height:140px;display:block;margin:0 auto 8px;background:#fff;padding:6px;}
+  .mkt-hero-qr .qr-cap{font-size:9.5px;color:rgba(241,236,224,.78);letter-spacing:.06em;text-align:center;line-height:1.4;}
+
+  @media(max-width:820px){
+    .mkt-hero-grid{grid-template-columns:1fr;gap:36px;}
+  }
+
+  /* Print: hide videos, show QR poster frames */
+  @media print{
+    .mkt-vidframe video, .mkt-vidframe-lg video{display:none;}
+    .mkt-vidframe::after, .mkt-vidframe-lg::after{
+      content:"[Video — see digital deck]";
+      position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);
+      text-align:center;color:#fff;font-size:11px;letter-spacing:.06em;font-style:italic;
+    }
+    .mkt-hero-item .frame-wrap video{display:none;}
+    .mkt-hero-item .frame-wrap{background:#0E1F40;}
+    .mkt-hero-item .frame-wrap::after{
+      content:"";
+      position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+      width:1px;height:1px;
+    }
+    .mkt-hero-item .unmute-cap{display:none;}
+    .mkt-hero-item .mkt-hero-qr{display:block;margin-top:8px;}
+  }
+
+  footer{padding:28px 64px;background:var(--navy-deep);color:rgba(241,236,224,.7);font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+  footer span{letter-spacing:.1em;}
+  footer .signature{font-family:var(--serif);font-style:italic;color:var(--sand);font-size:13px;letter-spacing:.04em;}
+
+  @media(max-width:820px){
+    .kpi-row, .platforms, .cats, .take, .bench{grid-template-columns:1fr 1fr;}
+    .priocards, .two, .two.flip, .two.half{grid-template-columns:1fr;}
+    .hero, section.part, footer, .toc, .sectionband{padding-left:24px;padding-right:24px;}
+    .hero h1{font-size:42px;}
+    .hero .meta{position:static;text-align:left;margin-top:14px;}
+    .hbar{grid-template-columns:140px 1fr 56px;}
+    .outlet-grid{grid-template-columns:1fr 1fr;}
+    .dowgrid{grid-template-columns:repeat(4,1fr);}
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Section navigation">
+  <div class="topnav-inner">
+    <div class="brand">The Nickel</div>
+    <ul>
+      <li><a href="#top" class="top-link">Top</a></li>
+      <li><a href="#contents" class="top-link">Contents</a></li>
+      <li><a href="#section-1">1 · Guest Sat</a></li>
+      <li><a href="#section-2">2 · April Financials</a></li>
+      <li><a href="#section-3">3 · Forecast</a></li>
+      <li><a href="#section-4">4 · Channels</a></li>
+      <li><a href="#section-5">5 · Demand Mix</a></li>
+      <li><a href="#section-6">6 · STR</a></li>
+      <li><a href="#section-7">7 · RR · April</a></li>
+      <li><a href="#section-8">8 · RR · YTD</a></li>
+      <li><a href="#section-9">9 · RR · Forecast</a></li>
+      <li><a href="#section-10">10 · Marketing</a></li>
+      <li><a href="#section-11">11 · Priorities</a></li>
+    </ul>
+  </div>
+</nav>
+
+<a href="#top" class="backtotop-float" aria-label="Back to top"></a>
+
+<div class="report" id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <div class="hero">
+    <div class="sidebar-label">April 2026 · Internal Review</div>
+    <div class="hero-inner">
+      <div class="meta">Internal Review<br>Prepared May 2026<br>Charleston, SC</div>
+      <div class="eyebrow">The Nickel Hotel · Inaugural Year</div>
+      <h1>The Nickel Hotel<br><span class="em">April 2026 Recap</span> &amp; May–Jul Forecast</h1>
+      <div class="sub">April delivered the cleanest single-month read of the inaugural year — rate index #2 of 7, NOI 36% above plan, and Cash Flow After Debt positive for the first time.</div>
+      <div class="rule"></div>
+      <div class="chips">
+        <span class="chip">50 Keys</span>
+        <span class="chip">Luxury Boutique</span>
+        <span class="chip">King Street · Charleston</span>
+        <span class="chip">Inaugural Year</span>
+        <span class="chip">Rosemary Rose Rooftop</span>
+      </div>
+    </div>
+    <div class="stamp"><span class="lg">— The Nickel —</span>529 King Street</div>
+  </div>
+
+  <!-- ===================== TABLE OF CONTENTS ===================== -->
+  <div class="toc" id="contents">
+    <div class="kicker">Contents</div>
+    <h2>Eleven sections · click to jump</h2>
+    <div class="sub">All links remain clickable when exported to PDF. <span class="print-help" style="color:var(--muted);font-size:12px;">For best results in PDF, use <strong>File → Print → Save as PDF</strong> in Chrome/Edge/Safari.</span></div>
+    <div class="toc-grid">
+      <a class="toc-item" href="#section-1"><div class="num">01</div><div class="body"><div class="name">Hotel Guest Satisfaction &amp; Reputation</div><div class="desc">Review rating, NPS, category scores, comp set — April</div></div></a>
+      <a class="toc-item" href="#section-2"><div class="num">02</div><div class="body"><div class="name">Hotel Financial Performance · April Actuals</div><div class="desc">April 2026 Actual vs Budget — full P&amp;L</div></div></a>
+      <a class="toc-item" href="#section-3"><div class="num">03</div><div class="body"><div class="name">Hotel Financial Forecast · May–Jul</div><div class="desc">May, June, and July 2026 rolling forecast</div></div></a>
+      <a class="toc-item" href="#section-4"><div class="num">04</div><div class="body"><div class="name">Top Producing Channels · April</div><div class="desc">Channel/segment ranking by April room revenue</div></div></a>
+      <a class="toc-item" href="#section-5"><div class="num">05</div><div class="body"><div class="name">Demand Mix · Segments, DOW, Room Type</div><div class="desc">Three lenses on April demand composition</div></div></a>
+      <a class="toc-item" href="#section-6"><div class="num">06</div><div class="body"><div class="name">STR Performance · April</div><div class="desc">MPI, ARI, RGI vs Charleston luxury comp set</div></div></a>
+      <a class="toc-item" href="#section-7"><div class="num">07</div><div class="body"><div class="name">Rosemary Rose · April 2026</div><div class="desc">Outlet scorecard — revenue, cost mix, service modes</div></div></a>
+      <a class="toc-item" href="#section-8"><div class="num">08</div><div class="body"><div class="name">Rosemary Rose · YTD through April</div><div class="desc">Four-month view — same scorecard, broader window</div></div></a>
+      <a class="toc-item" href="#section-9"><div class="num">09</div><div class="body"><div class="name">Rosemary Rose · May–Jul Forecast</div><div class="desc">Outlet forecast through summer ramp</div></div></a>
+      <a class="toc-item" href="#section-10"><div class="num">10</div><div class="body"><div class="name">Marketing</div><div class="desc">Calendar · Email · Press · T+L Ad · Private Events · Summer Offer · RMR Collab · Social</div></div></a>
+      <a class="toc-item" href="#section-11"><div class="num">11</div><div class="body"><div class="name">Q2/Q3 Priorities &amp; Risk/Opportunity</div><div class="desc">What we're focused on, what we're watching</div></div></a>
+    </div>
+  </div>
+
+  <!-- ===================== SECTION 1 BAND ===================== -->
+  <div class="sectionband" id="section-1">
+    <div class="sidebar-num">Section · 01</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 1</div>
+      <h2>Hotel Guest Satisfaction &amp; Reputation</h2>
+    </div>
+    <div class="right">Revinate · April 2026<br>+ YTD through April</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Executive Snapshot</div>
+    <h2 class="ph">April was the strongest sentiment month <span class="em">of the inaugural year.</span></h2>
+    <p class="plede">April closed with Review Rating at <strong>4.89</strong> on 31 reviews — <strong>#1 of 6 in the named Charleston luxury comp set</strong>, ahead of Hotel Bennett (4.84), Bella Grace (4.40), Hyatt Place HD (4.27), Dewberry (4.17), and Moxy (3.59). Survey NPS finished April at <strong>82.0</strong> on 50 surveys (43 promoters, 5 passives, 2 detractors) — comfortably above the 40-point goal at 2.05× attainment, and the highest single-month NPS of the inaugural year. TripAdvisor Popularity Index lifted to 0.60 (from 0.55 in March) and the Charleston rank moved from #36 (March 1) to <strong>#31 (April 26) — a five-spot gain in eight weeks</strong>. Review-response coverage hit 100% (29 of 29) for the month.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">Review Rating · April</div><div class="val">4.89</div><div class="delta">+0.02 vs March</div><div class="sub">#1 of 6 · 122% of 4.0 goal</div></div>
+      <div class="kpi"><div class="lbl">Survey NPS · April</div><div class="val">82.0</div><div class="delta">+0.03 vs March</div><div class="sub">50 surveys · 2.05× goal (40)</div></div>
+      <div class="kpi"><div class="lbl">Positive Reviews · April</div><div class="val">97%</div><div class="delta">+2 pts vs March</div><div class="sub">Comp set 75% · index 130</div></div>
+      <div class="kpi"><div class="lbl">Recommended · April</div><div class="val">100%</div><div class="delta">flat · #1 in comp set</div><div class="sub">Goal: 85%</div></div>
+    </div>
+
+    <div class="kpi-row" style="margin-top:14px;">
+      <div class="kpi" style="border-top-color:var(--good);"><div class="lbl">TripAdvisor Rank · Current</div><div class="val">22</div><div class="delta">+14 ranks vs Mar 1 (36)</div><div class="sub">Apr 26: #31 · Current: #22</div></div>
+      <div class="kpi" style="border-top-color:var(--good);"><div class="lbl">YTD Review Rating</div><div class="val">4.81</div><div class="delta">124 YTD reviews</div><div class="sub">96% positive · 100% recommended</div></div>
+      <div class="kpi" style="border-top-color:var(--good);"><div class="lbl">YTD Survey NPS</div><div class="val">81.46</div><div class="delta">205 surveys YTD</div><div class="sub">175 promoters · 8 detractors</div></div>
+      <div class="kpi" style="border-top-color:var(--good);"><div class="lbl">Review Response Coverage</div><div class="val">100%</div><div class="delta">29 of 29 · April</div><div class="sub">Goal: 25% · 4.0× attainment</div></div>
+    </div>
+
+    <div class="tldr">
+      <div class="tag">What it means</div>
+      <p>April was a sentiment-quality breakout. Review Rating <strong>4.89 (#1 of 6)</strong>, Positive Reviews <strong>97%</strong> (comp index 130), Recommended <strong>100%</strong>, Survey NPS <strong>82.0</strong> — every headline metric ahead of comp and goal. Most operationally important: <strong>review-response coverage cleared 100% in April</strong> (vs the 25% goal), and TA rank moved five places in eight weeks. The one Q-over-Q watch-item is the <strong>Location category score dropping to 3.0</strong> (from 3.4 in March, on a small mention base) — flagged for review.</p>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Public Reviews · April 2026</div>
+    <h2 class="ph">Aggregate 4.89 — top of the comp set.</h2>
+    <p class="plede">April added <strong>31 reviews</strong> at a 4.89 aggregate rating — placing The Nickel <strong>#1 of 6 in the named Charleston luxury comp set</strong>, ahead of Hotel Bennett (4.84), Bella Grace (4.40), Hyatt Place HD (4.27), Dewberry (4.17), and Moxy (3.59). Review pace lifted 55% vs March's 20 reviews (comp index 119 — well ahead of the comp-set average of 26). Review share for the month: 19%.</p>
+
+    <div class="platforms">
+      <div class="platform">
+        <div class="name">Aggregate Review Rating</div>
+        <div class="val">4.89</div>
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <div class="scale">April · out of 5.00 · 31 reviews</div>
+        <div class="rank">#1 of 6 in comp set</div>
+        <div class="note">Cross-platform aggregate (TripAdvisor, Google, Booking, Expedia, etc.) — comp index 117.</div>
+      </div>
+      <div class="platform">
+        <div class="name">TripAdvisor</div>
+        <div class="val">4.9</div>
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <div class="scale">Average rating · out of 5.00</div>
+        <div class="rank">Charleston rank #22 · current</div>
+        <div class="note">Rank improved from #36 (Mar 1) to #31 (Apr 26) to <strong>#22 (current)</strong> — 14 spots in twelve weeks. TA Popularity Index 0.60 (comp index 124).</div>
+      </div>
+      <div class="platform">
+        <div class="name">Google</div>
+        <div class="val">4.9</div>
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <div class="scale">Average rating · out of 5.00</div>
+        <div class="rank">1 of 31 April reviews via Google</div>
+        <div class="note">Highest visibility platform — Google review volume is the May watch-item (only 1 of 31 April reviews came in via Google).</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Survey NPS · April 2026</div>
+    <h2 class="ph">Promoters, passives &amp; detractors.</h2>
+
+    <div class="two flip">
+      <div class="card">
+        <div class="nps-wrap">
+          <div style="font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-weight:600;">Survey NPS · April 2026</div>
+          <div class="nps-circle">
+            <div class="big">82.0</div>
+            <div class="cap">NPS</div>
+          </div>
+          <div class="nps-delta">+1.2 pts vs March (80.8)</div>
+          <div class="nps-note">Calculated as % Promoters − % Detractors.<br>Hospitality benchmark: 50 strong · 70+ elite.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Composition · April vs March</h3>
+        <h2>86% of April surveys were promoters — only 4% detractors.</h2>
+        <div class="stacked">
+          <div class="sbar">
+            <div class="slabel">April 2026</div>
+            <div class="strack">
+              <div class="seg prom" style="width:86%;">86%</div>
+              <div class="seg pass" style="width:10%;">10%</div>
+              <div class="seg det"  style="width:4%;">4%</div>
+            </div>
+          </div>
+          <div class="sbar">
+            <div class="slabel">March 2026</div>
+            <div class="strack">
+              <div class="seg prom" style="width:84%;">84%</div>
+              <div class="seg pass" style="width:11%;">11%</div>
+              <div class="seg det"  style="width:4%;">4%</div>
+            </div>
+          </div>
+        </div>
+        <div class="legend">
+          <span class="l-prom">Promoters (9–10)</span>
+          <span class="l-pass">Passives (7–8)</span>
+          <span class="l-det">Detractors (0–6)</span>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;">
+          <div style="border:1px solid var(--line);border-radius:0;padding:12px 14px;background:var(--softcream);">
+            <div style="font-family:var(--serif);font-size:26px;font-weight:300;color:var(--sand-deep);">43</div>
+            <div style="font-size:11.5px;font-weight:600;color:var(--navy-deep);">Promoters</div>
+            <div style="font-size:10px;color:var(--good);margin-top:2px;">86% of 50 surveys</div>
+          </div>
+          <div style="border:1px solid var(--line);border-radius:0;padding:12px 14px;background:var(--softcream);">
+            <div style="font-family:var(--serif);font-size:26px;font-weight:300;color:var(--sand-deep);">5</div>
+            <div style="font-size:11.5px;font-weight:600;color:var(--navy-deep);">Passives</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:2px;">10% of surveys</div>
+          </div>
+          <div style="border:1px solid var(--line);border-radius:0;padding:12px 14px;background:var(--softcream);">
+            <div style="font-family:var(--serif);font-size:26px;font-weight:300;color:var(--sand-deep);">2</div>
+            <div style="font-size:11.5px;font-weight:600;color:var(--navy-deep);">Detractors</div>
+            <div style="font-size:10px;color:var(--good);margin-top:2px;">4% · 2 of 50 surveys</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Sentiment Trend · Q4 '25 → April '26</div>
+    <h2 class="ph">NPS held at 80+ for five consecutive periods.</h2>
+    <p class="plede">Q4 '25 baseline NPS of 73.6, Q1 '26 NPS of 80.8, and now April standing at 82.0 — five consecutive months above the 70-point "elite" threshold. YTD-through-April NPS sits at 81.46 on 205 surveys.</p>
+
+    <div class="two">
+      <div class="trendchart">
+        <div class="thd"><div class="thd-l"><div class="ck">Survey NPS · By period</div><h2>NPS lifted again in April — 82.0 is the highest reading of the inaugural year.</h2></div><div class="thd-r">Source: Revinate · 205 surveys YTD</div></div>
+        <div class="trplot" style="padding:30px 0 30px;">
+          <div class="trgrid">
+            <div class="gl" style="top:0;"></div>
+            <div class="gl" style="top:33%;"></div>
+            <div class="gl" style="top:66%;"></div>
+            <div class="gl" style="top:100%;border-top:1px solid var(--navy-soft);"></div>
+          </div>
+          <div class="trbars" style="grid-template-columns:repeat(4,1fr);">
+            <div class="trbar"><div class="bar" style="height:74%;background:#A8B0C2;"></div><div class="v">73.6</div><div class="lbl">Q4 '25</div></div>
+            <div class="trbar"><div class="bar" style="height:81%;"></div><div class="v">80.8</div><div class="lbl">Q1 '26</div></div>
+            <div class="trbar"><div class="bar" style="height:82%;"></div><div class="v">82.0</div><div class="lbl">Apr '26</div></div>
+            <div class="trbar"><div class="bar" style="height:81%;background:#CCD3E2;"></div><div class="v">81.5</div><div class="lbl">YTD</div></div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:34px;font-style:italic;">Q4 '25 in muted tone (prior period). Q1 '26 and Apr '26 in sand (current cycle). YTD context bar in light tone.</div>
+      </div>
+
+      <div class="card dark">
+        <h3>The read</h3>
+        <h2>Sentiment strengthening. Pace accelerating.</h2>
+        <p style="font-size:13px;line-height:1.55;margin:0 0 10px;"><strong>Quality:</strong> April promoter share at 86% (43 of 50) — the highest single-month share. Detractor count held flat at 2.</p>
+        <p style="font-size:13px;line-height:1.55;margin:0 0 10px;"><strong>Engagement:</strong> April delivered 508 surveys at 94.6% delivery and 9.31% completion — 50 completed surveys, up from 45 in March.</p>
+        <p style="font-size:13px;line-height:1.55;margin:0 0 10px;"><strong>Volume:</strong> 31 April reviews vs comp-set average of 26 — review pace is outrunning the named comp set on a per-month basis.</p>
+        <p style="font-size:13px;line-height:1.55;margin:0;"><strong>Action:</strong> Hold the 100% response coverage discipline and continue driving TripAdvisor review volume — five rank-spots gained in eight weeks proves the lever works.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Category Scores · April 2026</div>
+    <h2 class="ph">Cleanliness perfect. Service near-perfect. Location is the watch-item.</h2>
+    <p class="plede" style="font-style:italic;color:var(--muted);">April 2026 category-level review ratings from Revinate. Category ratings normalized from a sub-set of review sites per Revinate methodology — small mention bases drive volatility, particularly on Location and Value.</p>
+
+    <div class="cats">
+      <div class="cat win"><span class="rank">5.0</span><div class="nm">Cleanliness</div><div class="sc">5.00</div><div class="cm">flat vs March · Sentiment 0 / 0 mentions</div></div>
+      <div class="cat win"><span class="rank">4.75</span><div class="nm">Service</div><div class="sc">4.75</div><div class="cm">flat vs March · Sentiment 100 / 23 mentions</div></div>
+      <div class="cat win"><span class="rank">4.89</span><div class="nm">Overall Rating</div><div class="sc">4.89</div><div class="cm">+0.02 vs March · Sentiment 85 / 48 mentions</div></div>
+      <div class="cat mid"><span class="rank">4.0</span><div class="nm">Rooms</div><div class="sc">4.00</div><div class="cm">-0.20 vs March · Sentiment 67 / 14 mentions</div></div>
+      <div class="cat bad"><span class="rank">3.0</span><div class="nm">Location</div><div class="sc">3.00</div><div class="cm">-0.40 vs March · Watch-item · small base</div></div>
+      <div class="cat mid"><span class="rank">No data</span><div class="nm">Value</div><div class="sc" style="color:var(--muted);">—</div><div class="cm">No April rating · Sentiment 50 / 2 mentions</div></div>
+    </div>
+
+    <div class="tldr" style="margin-top:22px;">
+      <div class="tag">Read on category mix</div>
+      <p><strong>Cleanliness held at a perfect 5.00 and Service at 4.75 — both consistent with the Q1 cadence.</strong> Sentiment-side Service score hit 100 in April (vs 73 in March) on 23 mentions — the largest qualitative jump of the month. The watch-items are <strong>Location (3.0, down from 3.4)</strong> and <strong>Rooms (4.0, down from 4.2)</strong>; both run on small mention bases, so a single review can swing the rating materially. Will check guest-feedback themes ahead of May to confirm whether the dip reflects a real operational signal or sampling noise.</p>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Charleston Luxury Comp Set · April 2026</div>
+    <h2 class="ph">#1 of 6 — top-rated hotel in the named set.</h2>
+
+    <div class="card" style="padding:18px 22px;">
+      <table class="data" style="font-size:12.5px;">
+        <thead>
+          <tr><th>Hotel</th><th>Rating</th><th>Pos. Reviews</th><th>Recommend</th><th># Reviews</th><th>Review Share</th><th>TA Pop. Index</th></tr>
+        </thead>
+        <tbody>
+          <tr class="us"><td>The Nickel Hotel</td><td>4.89</td><td>97%</td><td>100%</td><td>31</td><td>19%</td><td>0.60</td></tr>
+          <tr><td>Hotel Bennett</td><td>4.84</td><td>97%</td><td>—</td><td>35</td><td>22%</td><td>0.67</td></tr>
+          <tr><td>Hotel Bella Grace Charleston</td><td>4.40</td><td>80%</td><td>100%</td><td>10</td><td>6%</td><td>0.32</td></tr>
+          <tr><td>Hyatt Place Charleston Historic District</td><td>4.27</td><td>73%</td><td>100%</td><td>11</td><td>7%</td><td>0.48</td></tr>
+          <tr><td>The Dewberry Charleston</td><td>4.17</td><td>74%</td><td>100%</td><td>27</td><td>17%</td><td>0.73</td></tr>
+          <tr><td>Moxy Charleston Downtown</td><td>3.59</td><td>57%</td><td>100%</td><td>47</td><td>29%</td><td>0.23</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">April 2026 (April 1–30) · Source: Revinate Guest Satisfaction. The Nickel highlighted in sand. Comp-set average rating 4.17 · Comp index 117.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Section 1 · Takeaways</div>
+    <h2 class="ph">April was the cleanest sentiment month of the inaugural year.</h2>
+
+    <div class="take">
+      <div class="t g">
+        <h4>Strengths</h4>
+        <p>Review Rating 4.89 — <strong>#1 of 6 in the comp set</strong>. Survey NPS 82.0 (2.05× the 40-point goal). 100% Review Response Coverage in April (29 of 29). TA Pop Index 0.60, Charleston rank up five spots since March 1. Cleanliness 5.0, Service 4.75, Recommended 100%, Positive Reviews 97%.</p>
+      </div>
+      <div class="t">
+        <h4>Watchout</h4>
+        <p>Location category score dropped to 3.0 (from 3.4 in March) and Rooms to 4.0 (from 4.2) — small-mention bases, so single-review swing. <strong>Flag for review.</strong> Detractor count held at 2 — operational follow-up should review themes from those two detractors.</p>
+      </div>
+      <div class="t i">
+        <h4>Opportunity</h4>
+        <p>Review volume comp index 119 — April outpaced the comp set on volume. Coupled with #1 rating, this compounds into the TA rank trajectory (up 5 spots since Mar 1). Each additional review at 4.9 closes the rank gap further. Continue surfacing 5-star reviews into marketing creative.</p>
+      </div>
+      <div class="t w">
+        <h4>Next step</h4>
+        <p>Hold the 100% response SLA into May. Diagnose Location-category dip — is it a real signal (street noise, neighborhood) or small-sample volatility? Lift Google review volume in May (only 1 of 31 April reviews came in via Google) to close the cross-platform balance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 2 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-2">
+    <div class="sidebar-num">Section · 02</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 2</div>
+      <h2>Hotel Financial Performance · April Actuals</h2>
+    </div>
+    <div class="right">April 2026 Actual vs Budget<br>Full P&amp;L</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">April 2026 · Executive Summary</div>
+    <h2 class="ph">April beat plan by <span class="em">$135K of revenue</span> and crossed Cash Flow After Debt for the first time.</h2>
+    <p class="plede">April closed with Total Revenue of <strong>$1.07M</strong> — <strong>+$135.2K (+14.5%) above the CS Budget</strong> of $931.8K — driven by an ADR breakout to $581.77 (vs $476 plan, +22.2%) on near-budget occupancy of 77.5%. NOI of <strong>$496.5K</strong> beat budget by +$131.3K (+36.0%), with NOI margin at 46.5%. Most importantly: <strong>Cash Flow After Debt Service closed positive at +$101.5K</strong> — the first standalone profitable month of the inaugural year, against a budgeted +$10.2K.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">Total Revenue · April</div><div class="val">$1.07M</div><div class="delta">+14.5% vs Budget</div><div class="sub">Budget: $931.8K</div></div>
+      <div class="kpi"><div class="lbl">Rental Revenue – Net</div><div class="val">$676.6K</div><div class="delta">+20.0% vs Budget</div><div class="sub">Budget: $564.1K</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Income</div><div class="val">$334.6K</div><div class="delta">+5.1% vs Budget</div><div class="sub">Budget: $318.4K</div></div>
+      <div class="kpi"><div class="lbl">Net Operating Income</div><div class="val">$496.5K</div><div class="delta">+36.0% vs Budget</div><div class="sub">NOI margin 46.5%</div></div>
+    </div>
+    <div class="kpi-row" style="margin-top:14px;">
+      <div class="kpi"><div class="lbl">Occupancy · April</div><div class="val">77.5%</div><div class="delta dn">-1.47 pts vs Budget</div><div class="sub">Budget: 79.0%</div></div>
+      <div class="kpi"><div class="lbl">ADR · April</div><div class="val">$581.77</div><div class="delta">+22.2% vs Budget</div><div class="sub">Budget: $476</div></div>
+      <div class="kpi"><div class="lbl">RevPAR · April (PMS)</div><div class="val">$451.07</div><div class="delta">+20.0% vs Budget</div><div class="sub">STR basis: $461.33</div></div>
+      <div class="kpi" style="border-top-color:var(--good);"><div class="lbl">Cash Flow After Debt</div><div class="val">$101.5K</div><div class="delta">First positive month</div><div class="sub">Budget: +$10.2K · +$91.3K beat</div></div>
+    </div>
+
+    <div class="tldr">
+      <div class="tag">The read</div>
+      <p><strong>Rate carried the month.</strong> ADR cleared budget by +$106 — the largest single-month rate beat of the year. Occupancy missed plan by 1.5 points but the rate strength more than offset on RevPAR. F&amp;B beat by +$16.2K (+5.1%). Below-the-line: F&amp;B Payroll came in <strong>$26.8K under plan</strong>, the single largest expense-side variance. Note Other Non-Operating Expenses of $67.4K against $0 budget — same intentional-zero treatment as Q1; trended figure now at $182.5K YTD (Q1 $115K + April $67K).</p>
+    </div>
+
+    <div class="two" style="margin-top:24px;">
+      <div class="card">
+        <h3>April 2026 P&amp;L Summary</h3>
+        <h2>Actual vs Budget — line items as reported</h2>
+        <table class="data">
+          <thead><tr><th></th><th>Actual</th><th>Budget</th><th>vs Bud $</th><th>vs Bud %</th></tr></thead>
+          <tbody>
+            <tr><td>Occupancy</td><td>77.5%</td><td>79.0%</td><td class="neg">-1.5 pts</td><td class="neg">-1.9%</td></tr>
+            <tr><td>ADR</td><td>$581.77</td><td>$476.00</td><td class="pos">+$105.77</td><td class="pos">+22.2%</td></tr>
+            <tr><td>Rental Revenue – Net</td><td>$676,601</td><td>$564,060</td><td class="pos">+$112,541</td><td class="pos">+20.0%</td></tr>
+            <tr><td>Retail Income</td><td>$26,299</td><td>$27,064</td><td class="neg">-$765</td><td class="neg">-2.8%</td></tr>
+            <tr><td>F&amp;B Income</td><td>$334,581</td><td>$318,422</td><td class="pos">+$16,159</td><td class="pos">+5.1%</td></tr>
+            <tr><td>On-Site Parking Income</td><td>$3,900</td><td>$5,275</td><td class="neg">-$1,375</td><td class="neg">-26.1%</td></tr>
+            <tr><td>Other Income</td><td>$25,588</td><td>$16,955</td><td class="pos">+$8,633</td><td class="pos">+50.9%</td></tr>
+            <tr class="subtotal"><td>Total Revenue</td><td>$1,066,969</td><td>$931,777</td><td class="pos">+$135,192</td><td class="pos">+14.5%</td></tr>
+            <tr><td>Less: Commissions &amp; Referral Fees</td><td>-$21,740</td><td>-$15,288</td><td class="neg">-$6,452</td><td class="neg">-42.2%</td></tr>
+            <tr class="subtotal"><td>Net Revenues</td><td>$1,045,230</td><td>$916,489</td><td class="pos">+$128,741</td><td class="pos">+14.0%</td></tr>
+            <tr><td>Compensation</td><td>$83,547</td><td>$90,766</td><td class="pos">+$7,219</td><td class="pos">+8.0%</td></tr>
+            <tr><td>Maintenance</td><td>$7,931</td><td>$14,792</td><td class="pos">+$6,861</td><td class="pos">+46.4%</td></tr>
+            <tr><td>Utilities</td><td>$11,992</td><td>$12,025</td><td class="neu">+$33</td><td class="neu">0.3%</td></tr>
+            <tr><td>Administrative</td><td>$32,004</td><td>$31,326</td><td class="neg">-$678</td><td class="neg">-2.2%</td></tr>
+            <tr><td>Apartment Expenses</td><td>$35,968</td><td>$32,924</td><td class="neg">-$3,044</td><td class="neg">-9.2%</td></tr>
+            <tr><td>Marketing</td><td>$47,388</td><td>$35,870</td><td class="neg">-$11,518</td><td class="neg">-32.1%</td></tr>
+            <tr><td>Other Operating Expenses</td><td>$41,249</td><td>$37,727</td><td class="neg">-$3,522</td><td class="neg">-9.3%</td></tr>
+            <tr><td>F&amp;B Expenses</td><td>$179,573</td><td>$197,461</td><td class="pos">+$17,888</td><td class="pos">+9.1%</td></tr>
+            <tr><td>Fixed Expenses</td><td>$109,071</td><td>$98,411</td><td class="neg">-$10,660</td><td class="neg">-10.8%</td></tr>
+            <tr class="subtotal"><td>Total Expenses</td><td>$548,723</td><td>$551,302</td><td class="pos">+$2,579</td><td class="pos">+0.5%</td></tr>
+            <tr class="total"><td>Net Operating Income</td><td>$496,507</td><td>$365,187</td><td class="pos">+$131,320</td><td class="pos">+36.0%</td></tr>
+            <tr><td>Other Non-Operating Expenses</td><td>$67,384</td><td>$0</td><td class="neg">-$67,384</td><td class="neg">n/m</td></tr>
+            <tr><td>Cash Flow Before Debt Service</td><td>$429,122</td><td>$365,187</td><td class="pos">+$63,935</td><td class="pos">+17.5%</td></tr>
+            <tr><td>Interest Expense</td><td>$327,651</td><td>$355,000</td><td class="pos">+$27,349</td><td class="pos">+7.7%</td></tr>
+            <tr class="total"><td>Cash Flow After Debt Service</td><td>$101,471</td><td>$10,187</td><td class="pos">+$91,284</td><td class="pos">+896%</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">Source: Budget vs Actual 04.26.xlsx · CS sheet · MTD columns (Actual / Budget / Variance). PY (April 2025) n/a — property opened mid-2025.</div>
+      </div>
+
+      <div class="card dark">
+        <h3>Drivers</h3>
+        <h2>What moved the month</h2>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>Rate breakout.</strong> ADR $581.77 vs $476 plan — the largest monthly rate beat of the inaugural year. Combined with 1,163 occupied nights, drove +$112.5K of incremental rooms revenue.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>F&amp;B Payroll favorable.</strong> $91.5K actual vs $118.3K budget — $26.8K under plan. Largest single expense-side variance. Maintenance (-$6.9K) and Compensation (-$7.2K) also favorable.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>Marketing over-spend.</strong> $47.4K vs $35.9K plan (-$11.5K) — Advertising line ran $10.3K over. Worth reviewing whether this is a one-time push tied to the T&amp;L It List window.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0;"><strong>Note:</strong> Other Non-Operating $67.4K booked against a $0 budget — same intentional-zero pattern as Q1. YTD trend: $115K (Q1) + $67K (Apr) = <strong>$182.5K YTD through April</strong>. Flag for finance review.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Section 2 · Takeaways</div>
+    <h2 class="ph">A breakout month — rate strength dropped to the bottom line.</h2>
+
+    <div class="take">
+      <div class="t g">
+        <h4>Strengths</h4>
+        <p>NOI +$131K vs plan / +36.0%. ADR cleared budget by +$106. First positive Cash Flow After Debt month. F&amp;B Payroll -$26.8K under plan. Compensation, Maintenance, F&amp;B Expenses all favorable.</p>
+      </div>
+      <div class="t">
+        <h4>Watchout</h4>
+        <p>Occupancy missed plan by 1.5 points — rate carried the revenue beat. Marketing over plan by $11.5K — Advertising line ran $10.3K over. Other Non-Op ran $67.4K against $0 budget (now $182.5K YTD).</p>
+      </div>
+      <div class="t i">
+        <h4>Opportunity</h4>
+        <p>Holding ADR strength while closing the 1.5-point occupancy gap to budget would add another ~$20K of monthly RevPAR. May/Jun seasonality should compound the demand side without needing to flex rate.</p>
+      </div>
+      <div class="t w">
+        <h4>Next step</h4>
+        <p>Review Marketing spend by line ahead of May. Trend Other Non-Op through May to confirm run-rate. Hold ADR discipline through the May/Jun peak — rate is the proven lever and the F&amp;B Payroll win is the proven cost-side lever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-3">
+    <div class="sidebar-num">Section · 03</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 3</div>
+      <h2>Hotel Financial Forecast · May–Jul</h2>
+    </div>
+    <div class="right">May · June · July 2026<br>Rolling Forecast</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">May–Jul 2026 Forecast · Executive Summary</div>
+    <h2 class="ph">Three months of <span class="em">$1M+ revenue runs</span> stack — then summer softens.</h2>
+    <p class="plede">The rolling May/Jun/Jul forecast carries the April lift partially forward: May at <strong>$1.06M Total Revenue</strong> on $520 ADR / 76% Occ, June at <strong>$921K</strong> on $438 ADR / 75% Occ as Charleston heat picks up, and July at <strong>$732K</strong> on $365 ADR / 75% Occ as the summer softness sets in. Combined three-month Total Revenue is <strong>$2.71M</strong>. NOI runs $471K (May) → $363K (Jun) → $213K (Jul), with May expected to deliver the year's second standalone-profitable month (Net Income +$116.3K). July dips back below the line (Net Income -$141.7K) as ADR compresses by ~37% from April's peak — the seasonal pattern. June and July remain "Budget" labels in the source workbook; only May carries a true "Forecast" designation.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">Total Revenue · May–Jul</div><div class="val">$2.71M</div><div class="delta">3-month forecast</div><div class="sub">May $1.06M · Jun $921K · Jul $732K</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Income · May–Jul</div><div class="val">$961.6K</div><div class="delta">Peak May · $360.5K</div><div class="sub">Jun $339.1K · Jul $261.9K</div></div>
+      <div class="kpi"><div class="lbl">NOI · May–Jul</div><div class="val">$1.05M</div><div class="delta">Margin 38.7%</div><div class="sub">May $471K · Jun $363K · Jul $213K</div></div>
+      <div class="kpi"><div class="lbl">Standalone Profitable Months</div><div class="val">1</div><div class="delta">May only · +$116K NI</div><div class="sub">Jun +$8K · Jul -$142K</div></div>
+    </div>
+
+    <div class="tldr">
+      <div class="tag">The read</div>
+      <p><strong>May is the peak.</strong> Forecast ADR of $520 + Occ 76% delivers May Total Revenue of $1.06M and Net Income of +$116.3K — the second consecutive standalone-profitable month if achieved. June steps down as Charleston heat compresses rate to $438; July compresses further to $365 ADR. The April actual ADR ($581.77) cleared the May forecast by $61 — so there is upside if rate discipline holds into the peak window. Risk is on the volume side: April under-shipped occupancy by 1.5 points, May and June need to clear 76% and 75% respectively to hold the forecast revenue.</p>
+    </div>
+
+    <div class="fvb-chart" style="margin-top:24px;">
+      <div class="fvb-head">
+        <div class="left">
+          <div class="ckicker">Monthly Total Revenue · 2026 Actual + Forecast ($K)</div>
+          <h2>April was the inaugural-year peak; May–Jul forecast carries it partly forward.</h2>
+          <div class="sub">Jan–Apr actualized · May forecast · Jun/Jul rolling · axis $0–$1,200K</div>
+        </div>
+        <div class="fvb-summary">
+          <div class="cell"><div class="clbl">Apr Actual</div><div class="cval">$1,067K</div></div>
+          <div class="cell"><div class="clbl">May–Jul Forecast</div><div class="cval">$2,708K</div></div>
+          <div class="cell"><div class="clbl">YTD Apr Actual</div><div class="cval pos">$2,841K</div></div>
+        </div>
+      </div>
+
+      <div class="fvb-plot" style="height:300px;">
+        <div class="fvb-grid">
+          <div class="fvb-gridline" style="top:0%;"></div>
+          <div class="fvb-gridline" style="top:25%;"></div>
+          <div class="fvb-gridline" style="top:50%;"></div>
+          <div class="fvb-gridline" style="top:75%;"></div>
+          <div class="fvb-axis"></div>
+          <div class="fvb-ylabel" style="top:0%;">$1,200K</div>
+          <div class="fvb-ylabel" style="top:25%;">$900K</div>
+          <div class="fvb-ylabel" style="top:50%;">$600K</div>
+          <div class="fvb-ylabel" style="top:75%;">$300K</div>
+          <div class="fvb-ylabel" style="top:100%;">$0</div>
+          <div class="fvb-cols">
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar actual" style="height:32%;"></div></div><div class="fvb-mlabel">Jan<span class="phase">Actual · $382K</span></div></div>
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar actual" style="height:38%;"></div></div><div class="fvb-mlabel">Feb<span class="phase">Actual · $462K</span></div></div>
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar actual" style="height:78%;"></div></div><div class="fvb-mlabel">Mar<span class="phase">Actual · $930K</span></div></div>
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar actual" style="height:89%;"></div></div><div class="fvb-mlabel">Apr<span class="phase">Actual · $1,067K</span></div></div>
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar forecast" style="height:88%;"></div></div><div class="fvb-mlabel">May<span class="phase">Forecast · $1,055K</span></div></div>
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar forecast" style="height:77%;"></div></div><div class="fvb-mlabel">Jun<span class="phase">Forecast · $921K</span></div></div>
+            <div class="fvb-col"><div class="fvb-bars"><div class="fvb-bar forecast" style="height:61%;"></div></div><div class="fvb-mlabel">Jul<span class="phase">Forecast · $732K</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fvb-legend">
+        <span class="lgd-actual">Actual (Jan–Apr)</span>
+        <span class="lgd-forecast">Forecast (May–Jul)</span>
+      </div>
+      <div class="fvb-footer">
+        April was the highest monthly revenue of the year so far. May/Jun/Jul forecast is sourced from "12 Month Budget Actual_04.26 copy" CS Budget sheet — May at Forecast designation, June and July at Budget designation (no formal rolling forecast filed). Apr 2025 PY n/a — property opened mid-2025.
+      </div>
+    </div>
+
+    <div class="two" style="margin-top:22px;">
+      <div class="card">
+        <h3>May–Jul 2026 Forecast P&amp;L Summary</h3>
+        <h2>Month-by-month — top-line through Net Income</h2>
+        <table class="data" style="font-size:12px;">
+          <thead><tr><th></th><th>May</th><th>Jun</th><th>Jul</th><th>3-Mo Total</th></tr></thead>
+          <tbody>
+            <tr><td>ADR</td><td>$520</td><td>$438</td><td>$365</td><td>$441</td></tr>
+            <tr><td>Occupancy</td><td>76%</td><td>75%</td><td>75%</td><td>75.3%</td></tr>
+            <tr><td>Nights Occupied</td><td>1,178</td><td>1,125</td><td>1,163</td><td>3,466</td></tr>
+            <tr><td>Rental Revenue – Net</td><td>$645,000</td><td>$535,000</td><td>$424,905</td><td>$1,604,905</td></tr>
+            <tr><td>Retail Income</td><td>$26,299</td><td>$27,064</td><td>$27,064</td><td>$80,427</td></tr>
+            <tr><td>F&amp;B Income</td><td>$360,545</td><td>$339,084</td><td>$261,945</td><td>$961,574</td></tr>
+            <tr><td>On-Site Parking</td><td>$5,216</td><td>$4,782</td><td>$5,097</td><td>$15,095</td></tr>
+            <tr><td>Other Income</td><td>$18,400</td><td>$14,831</td><td>$12,772</td><td>$46,003</td></tr>
+            <tr class="subtotal"><td>Total Revenue</td><td>$1,055,460</td><td>$920,761</td><td>$731,783</td><td>$2,708,004</td></tr>
+            <tr><td>Less: Commissions</td><td>-$16,533</td><td>-$13,421</td><td>-$11,661</td><td>-$41,615</td></tr>
+            <tr class="subtotal"><td>Net Revenues</td><td>$1,038,927</td><td>$907,340</td><td>$720,122</td><td>$2,666,389</td></tr>
+            <tr><td>Compensation</td><td>$90,766</td><td>$90,766</td><td>$90,766</td><td>$272,298</td></tr>
+            <tr><td>Maintenance</td><td>$11,792</td><td>$11,792</td><td>$11,792</td><td>$35,377</td></tr>
+            <tr><td>Utilities</td><td>$12,025</td><td>$12,025</td><td>$12,025</td><td>$36,075</td></tr>
+            <tr><td>Administrative</td><td>$31,326</td><td>$31,326</td><td>$31,326</td><td>$93,978</td></tr>
+            <tr><td>Apartment Expenses</td><td>$32,863</td><td>$32,419</td><td>$32,741</td><td>$98,023</td></tr>
+            <tr><td>Marketing</td><td>$35,870</td><td>$35,870</td><td>$35,870</td><td>$107,610</td></tr>
+            <tr><td>Other Operating Expenses</td><td>$41,544</td><td>$35,532</td><td>$29,387</td><td>$106,463</td></tr>
+            <tr><td>F&amp;B Expenses</td><td>$206,885</td><td>$196,427</td><td>$174,466</td><td>$577,778</td></tr>
+            <tr><td>Fixed Expenses</td><td>$104,595</td><td>$97,860</td><td>$88,411</td><td>$290,866</td></tr>
+            <tr class="subtotal"><td>Total Expenses</td><td>$567,666</td><td>$544,018</td><td>$506,785</td><td>$1,618,469</td></tr>
+            <tr class="total"><td>Net Operating Income</td><td>$471,262</td><td>$363,323</td><td>$213,337</td><td>$1,047,921</td></tr>
+            <tr><td>Interest Expense</td><td>$355,000</td><td>$355,000</td><td>$355,000</td><td>$1,065,000</td></tr>
+            <tr class="total"><td>Net Income (after debt)</td><td>$116,262</td><td>$8,323</td><td class="neg">-$141,663</td><td class="neg">-$17,079</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">Source: "12 Month Budget Actual_04.26 copy" CS Budget sheet · cols 13 (May Forecast), 15 (Jun Budget), 17 (Jul Budget). Forecast file collapses F&amp;B costs to "Prime Costs + Operating Expenses" with no separate Payroll line. PY comparison [source not provided] — May–Jul 2025 actuals exist but weren't in the source workbook for this view.</div>
+      </div>
+
+      <div class="card dark">
+        <h3>Forecast risks &amp; watch-items</h3>
+        <h2>Three things to monitor</h2>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>Volume vs rate trade-off.</strong> May/Jun/Jul forecast ADRs ($520 / $438 / $365) all sit below April's $582 actual. If the rate discipline can hold above forecast even by $30–50, the upside is material — May forecast NI of +$116K becomes +$150K+.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>July softness.</strong> Forecast Net Income of -$141.7K in July is the inverse of April. Charleston heat plus reduced corporate-travel demand. Need a confident operational plan for July labor scaling or contribution margin compresses sharply.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0;"><strong>F&amp;B labor scaling.</strong> Forecast F&amp;B expense lines are at budgeted prime-cost levels — the +$26.8K April labor win is not yet built into the May-Jul lines. Holding the April labor leverage through the peak is a $50–80K upside.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Section 3 · Takeaways</div>
+    <h2 class="ph">May is where the forecast gets validated.</h2>
+
+    <div class="take">
+      <div class="t g">
+        <h4>Strengths</h4>
+        <p>May Net Income +$116.3K forecast — second consecutive profitable month if achieved. Three-month NOI of $1.05M. April ADR cleared all three forecast ADRs — rate runway exists.</p>
+      </div>
+      <div class="t">
+        <h4>Watchout</h4>
+        <p>July Net Income -$141.7K — single-month dip into the red. June forecast ADR of $438 is the lowest mid-quarter rate; verify pickup pace weekly through May. Forecast file labels Jun/Jul as Budget (not Forecast).</p>
+      </div>
+      <div class="t i">
+        <h4>Opportunity</h4>
+        <p>Holding April's rate strength through May would lift Net Income materially. Carrying the F&amp;B Payroll discipline (-$26.8K April) forward as a structural change is worth $50–80K through the May–Jul window.</p>
+      </div>
+      <div class="t w">
+        <h4>Next step</h4>
+        <p>Lock the May pickup pace review with revenue management. Build the July operational plan (labor scaling, demand stimulation) ahead of June 15. Convert May to a formal rolling forecast vs the underlying budget posture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-4">
+    <div class="sidebar-num">Section · 04</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 4</div>
+      <h2>Top Producing Channels · April</h2>
+    </div>
+    <div class="right">April 2026 · Channel ranking<br>by Room Revenue</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Top Producing Channels · April 2026</div>
+    <h2 class="ph">Direct retail is doing more of the work — at higher ADRs.</h2>
+    <p class="plede">April Top 8 producers below are <strong>channels &amp; segments</strong> ranked by April room revenue. Built from the SynXis reservation report Nights tab (April-only daily rates), <strong>scaled to GL Net Rental Revenue basis ($676,601)</strong> so the table ties exactly to the P&amp;L. <strong>Direct retail (TRRTLNREF + TRRTLFLEX) is now 60.2% of room revenue</strong> in April (vs ~56% in Q1) at meaningfully higher ADRs than Q1. TRRTLNREF closed at $688 ADR (was $476 in Q1) and TRRTLFLEX at $681 ADR (was $524). OTA share held at ~30.0%. Loyalty roughly tripled in volume to 53 RNs at $578 ADR.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">Total Rooms Revenue · April</div><div class="val">$676.6K</div><div class="delta">Ties to GL Net Rental Rev</div><div class="sub">1,155 PMS-Apr nights / 1,163 GL nights</div></div>
+      <div class="kpi"><div class="lbl">Direct Retail Share</div><div class="val">60.2%</div><div class="delta">+~4 pts vs Q1</div><div class="sub">$407K · 594 RNs · ~$685 ADR</div></div>
+      <div class="kpi"><div class="lbl">OTA Share</div><div class="val">30.0%</div><div class="delta">flat vs Q1</div><div class="sub">$203K · 447 RNs · ~$455 ADR</div></div>
+      <div class="kpi"><div class="lbl">Highest ADR Channel</div><div class="val">$688</div><div class="delta">TRRTLNREF · 359 RNs</div><div class="sub">Largest volume + highest ADR</div></div>
+    </div>
+
+    <div class="tldr">
+      <div class="tag">The read</div>
+      <p><strong>The direct channel is compounding.</strong> TRRTLNREF closed at 359 RNs at $688 ADR — Direct Non-Refundable is now the property's flagship channel by both volume and rate. TRRTLFLEX added 235 RNs at $681 ADR. The combined direct-retail share lifted ~4 points vs Q1. OTA mix held steady at ~30% — the watch-item is that OTA NREF ADR ($434) is now the largest gap vs direct retail ($688) the property has carried; commission-adjusted yield discipline remains critical. Loyalty (53 RNs at $578 ADR) roughly tripled vs Q1 — early signal of brand pull on direct channels.</p>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">April 2026 · Channel Detail</div>
+    <h2 class="ph">Top channels &amp; segments — totals tie to April Room Rental Revenue.</h2>
+
+    <div class="card">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th style="text-align:left;">Channel / Segment</th>
+            <th>Source</th>
+            <th>Room Nights</th>
+            <th>ADR</th>
+            <th>Revenue</th>
+            <th>% of Rooms Rev</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="us"><td style="text-align:right;">1</td><td>TRRTLNREF</td><td>Direct · Non-Refundable</td><td>359</td><td>$688.20</td><td>$247,064</td><td>36.5%</td></tr>
+          <tr><td style="text-align:right;">2</td><td>TROTANREF</td><td>OTA · Non-Refundable</td><td>380</td><td>$434.32</td><td>$165,042</td><td>24.4%</td></tr>
+          <tr class="us"><td style="text-align:right;">3</td><td>TRRTLFLEX</td><td>Direct · Flexible</td><td>235</td><td>$681.30</td><td>$160,106</td><td>23.7%</td></tr>
+          <tr><td style="text-align:right;">4</td><td>TROTAFLEX</td><td>OTA · Flexible</td><td>67</td><td>$569.46</td><td>$38,154</td><td>5.6%</td></tr>
+          <tr><td style="text-align:right;">5</td><td>TRLOYALTY</td><td>Loyalty / Member Rate</td><td>53</td><td>$577.98</td><td>$30,633</td><td>4.5%</td></tr>
+          <tr><td style="text-align:right;">6</td><td>TRMKT</td><td>Marketing / Promo</td><td>32</td><td>$599.60</td><td>$19,187</td><td>2.8%</td></tr>
+          <tr><td style="text-align:right;">7</td><td>GRCORP</td><td>Group · Corporate</td><td>21</td><td>$534.83</td><td>$11,231</td><td>1.7%</td></tr>
+          <tr><td style="text-align:right;">8</td><td>TRNEGCORP</td><td>Negotiated Corporate</td><td>8</td><td>$647.97</td><td>$5,184</td><td>0.8%</td></tr>
+          <tr class="total"><td></td><td>Top 8 Total</td><td></td><td>1,155</td><td>$585.80</td><td>$676,601</td><td>100%</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">April 2026 · Channel mix from the SynXis Nights tab (April-only daily rates), with revenues scaled to GL Net Rental Revenue basis of $676,601 (scaling factor 0.8682, strips the ~13.2% Charleston accommodations tax + fees layer that is included in PMS daily rates). Direct retail segments highlighted in sand. <strong>Reconciliation:</strong> 1,155 PMS-counted April-only nights vs 1,163 GL Nights Occupied — small 8-night gap from typical comp/no-show handling; weighted ADR $585.80 vs GL $581.77 — same 8-night gap.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">% of April Rooms Revenue · By Channel</div>
+    <h2 class="ph">Direct retail clears 60%; OTA holds at 30%.</h2>
+
+    <div class="card">
+      <div class="hbars" style="margin-top:8px;">
+        <div class="hbar us"><div class="hname">TRRTLNREF · Direct NR</div><div class="htrack"><div class="hfill" style="width:36.5%;"></div></div><div class="hval">36.5%</div></div>
+        <div class="hbar"><div class="hname">TROTANREF · OTA NR</div><div class="htrack"><div class="hfill" style="width:24.4%;"></div></div><div class="hval">24.4%</div></div>
+        <div class="hbar us"><div class="hname">TRRTLFLEX · Direct Flex</div><div class="htrack"><div class="hfill" style="width:23.7%;"></div></div><div class="hval">23.7%</div></div>
+        <div class="hbar"><div class="hname">TROTAFLEX · OTA Flex</div><div class="htrack"><div class="hfill" style="width:5.6%;"></div></div><div class="hval">5.6%</div></div>
+        <div class="hbar"><div class="hname">TRLOYALTY · Loyalty</div><div class="htrack"><div class="hfill" style="width:4.5%;"></div></div><div class="hval">4.5%</div></div>
+        <div class="hbar"><div class="hname">TRMKT · Promo</div><div class="htrack"><div class="hfill" style="width:2.8%;"></div></div><div class="hval">2.8%</div></div>
+        <div class="hbar"><div class="hname">GRCORP · Group</div><div class="htrack"><div class="hfill" style="width:1.7%;"></div></div><div class="hval">1.7%</div></div>
+        <div class="hbar"><div class="hname">TRNEGCORP · Corp Neg</div><div class="htrack"><div class="hfill" style="width:0.8%;"></div></div><div class="hval">0.8%</div></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:14px;font-style:italic;">Direct retail (sand) vs all other channels (navy). Direct retail combined = 60.2% of April room revenue (= $407.2K of $676.6K), up from 56.1% in Q1.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Section 4 · Takeaways</div>
+    <h2 class="ph">Direct mix is improving as the channel maturity ramps.</h2>
+
+    <div class="take">
+      <div class="t g">
+        <h4>Strengths</h4>
+        <p>Direct retail share at 59.9% (up ~4 pts vs Q1) at ~$791 ADR average. Loyalty channel tripled in volume at $687 ADR — brand pull confirming. Group Corporate built modestly (21 RNs at $618 ADR).</p>
+      </div>
+      <div class="t">
+        <h4>Watchout</h4>
+        <p>OTA NREF ADR of $497 (net of commissions) now sits $302 below direct retail — the largest ADR delta the property has carried. Net-of-commission yield discipline remains critical as OTA volume scales.</p>
+      </div>
+      <div class="t i">
+        <h4>Opportunity</h4>
+        <p>Negotiated Corporate built to 8 RNs / $748 ADR — high ADR but tiny base. A targeted Q3 push could move this to 30–50 RNs at $400–500 ADR for $15–25K/month of incremental high-margin direct revenue.</p>
+      </div>
+      <div class="t w">
+        <h4>Next step</h4>
+        <p>Stand up the Q2/Q3 corporate negotiated prospect list — focus on Charleston legal, finance, healthcare. Continue OTA rate-parity discipline. Build Loyalty channel through May/June — early signal validates the lever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 5 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-5">
+    <div class="sidebar-num">Section · 05</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 5</div>
+      <h2>Demand Mix · Segments, Day of Week, Room Type</h2>
+    </div>
+    <div class="right">April 2026 · Three lenses<br>on demand composition</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">5A · Market Segmentation</div>
+    <h2 class="ph">Transient still ~98% of April — by design.</h2>
+    <p class="plede">Across all market segments, Transient business produced 98.5% of April room revenue. Group Corporate built modestly to 21 RNs / $13K — the only meaningful non-transient activity in the month. Wholesale and FIT remain absent. Consistent with a luxury independent still validating transient demand before pricing group/contract business.</p>
+
+    <div class="card">
+      <table class="data" style="font-size:12.5px;">
+        <thead>
+          <tr><th>Segment</th><th>Description</th><th>RNs</th><th>ADR</th><th>Revenue</th><th>% of Rev</th></tr>
+        </thead>
+        <tbody>
+          <tr class="us"><td>TRRTLNREF</td><td>Transient · Direct Non-Refundable</td><td>359</td><td>$688.20</td><td>$247,064</td><td>36.5%</td></tr>
+          <tr><td>TROTANREF</td><td>Transient · OTA Non-Refundable</td><td>380</td><td>$434.32</td><td>$165,042</td><td>24.4%</td></tr>
+          <tr class="us"><td>TRRTLFLEX</td><td>Transient · Direct Flexible</td><td>235</td><td>$681.30</td><td>$160,106</td><td>23.7%</td></tr>
+          <tr><td>TROTAFLEX</td><td>Transient · OTA Flexible</td><td>67</td><td>$569.46</td><td>$38,154</td><td>5.6%</td></tr>
+          <tr><td>TRLOYALTY</td><td>Transient · Loyalty</td><td>53</td><td>$577.98</td><td>$30,633</td><td>4.5%</td></tr>
+          <tr><td>TRMKT</td><td>Transient · Marketing / Promo</td><td>32</td><td>$599.60</td><td>$19,187</td><td>2.8%</td></tr>
+          <tr><td>GRCORP</td><td>Group · Corporate</td><td>21</td><td>$534.83</td><td>$11,231</td><td>1.7%</td></tr>
+          <tr><td>TRNEGCORP</td><td>Transient · Negotiated Corp</td><td>8</td><td>$647.97</td><td>$5,184</td><td>0.8%</td></tr>
+          <tr class="total"><td>Total</td><td>All Segments</td><td>1,155</td><td>$585.80</td><td>$676,601</td><td>100%</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">April 2026 · Channel mix from PMS Nights tab (April-only), scaled to GL Net Rental Revenue basis of $676,601. Transient business produced 98.3% of April room revenue.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">5B · Day of Week Performance · April 2026</div>
+    <h2 class="ph">Weekend compresses; Sunday/Monday still soft on volume.</h2>
+    <p class="plede">April day-of-week performance from STR: Thursday through Saturday running 80–88% occupancy at $659–$763 ADR. Sunday at 56.5% occupancy is the softest day of the week (MPI 71.9). Mon/Tue improved meaningfully vs Q1 — Tuesday at 85.0% / MPI 89.6 is now near comp parity. Wednesday and Thursday both cleared ARI 119/125 — rate above the comp set by 19–25 points on the demand peak.</p>
+
+    <div class="card">
+      <div style="margin-bottom:14px;font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600;">April 2026 · Day of Week (STR data)</div>
+      <div class="dowgrid">
+        <div class="dowtile soft"><div class="d">Sun</div><div class="occ">56.5%</div><div class="adr">$444 ADR</div><div class="rp">RP $251</div></div>
+        <div class="dowtile"><div class="d">Mon</div><div class="occ">66.0%</div><div class="adr">$440 ADR</div><div class="rp">RP $290</div></div>
+        <div class="dowtile peak"><div class="d">Tue</div><div class="occ">85.0%</div><div class="adr">$477 ADR</div><div class="rp">RP $405</div></div>
+        <div class="dowtile peak"><div class="d">Wed</div><div class="occ">83.2%</div><div class="adr">$543 ADR</div><div class="rp">RP $452</div></div>
+        <div class="dowtile peak"><div class="d">Thu</div><div class="occ">79.6%</div><div class="adr">$659 ADR</div><div class="rp">RP $525</div></div>
+        <div class="dowtile peak"><div class="d">Fri</div><div class="occ">88.5%</div><div class="adr">$754 ADR</div><div class="rp">RP $667</div></div>
+        <div class="dowtile peak"><div class="d">Sat</div><div class="occ">82.0%</div><div class="adr">$763 ADR</div><div class="rp">RP $626</div></div>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:14px;font-style:italic;">Sand-bordered tiles = peak (≥80% Occ); blue-bordered tiles = soft (≤72% Occ). RP = RevPAR. Source: STR Monthly · DOW table.</div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <div style="font-size:11px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:10px;">April 2026 · Day of Week vs Comp Set (STR)</div>
+      <table class="data" style="font-size:12.5px;">
+        <thead><tr><th>DOW</th><th>My Occ</th><th>Comp Occ</th><th>MPI</th><th>My ADR</th><th>Comp ADR</th><th>ARI</th><th>My RevPAR</th><th>Comp RevPAR</th><th>RGI</th></tr></thead>
+        <tbody>
+          <tr><td>Sunday</td><td>56.5%</td><td>78.6%</td><td class="neg">71.9</td><td>$444</td><td>$427</td><td class="pos">104.1</td><td>$251</td><td>$335</td><td class="neg">74.8</td></tr>
+          <tr><td>Monday</td><td>66.0%</td><td>90.1%</td><td class="neg">73.2</td><td>$440</td><td>$443</td><td>99.4</td><td>$290</td><td>$399</td><td class="neg">72.8</td></tr>
+          <tr><td>Tuesday</td><td>85.0%</td><td>94.8%</td><td>89.6</td><td>$477</td><td>$478</td><td>99.7</td><td>$405</td><td>$454</td><td>89.3</td></tr>
+          <tr><td>Wednesday</td><td>83.2%</td><td>95.3%</td><td>87.3</td><td>$543</td><td>$456</td><td class="pos">119.1</td><td>$452</td><td>$434</td><td class="pos">104.0</td></tr>
+          <tr><td>Thursday</td><td>79.6%</td><td>93.1%</td><td>85.5</td><td>$659</td><td>$527</td><td class="pos">125.0</td><td>$525</td><td>$491</td><td class="pos">106.9</td></tr>
+          <tr><td>Friday</td><td>88.5%</td><td>96.8%</td><td>91.5</td><td>$754</td><td>$706</td><td class="pos">106.9</td><td>$667</td><td>$683</td><td>97.7</td></tr>
+          <tr><td>Saturday</td><td>82.0%</td><td>95.1%</td><td>86.2</td><td>$763</td><td>$692</td><td class="pos">110.3</td><td>$626</td><td>$658</td><td>95.1</td></tr>
+          <tr class="subtotal"><td>Weekday Avg</td><td>74.7%</td><td>90.7%</td><td>82.4</td><td>$527</td><td>$470</td><td class="pos">112.2</td><td>$394</td><td>$426</td><td>92.4</td></tr>
+          <tr class="subtotal"><td>Weekend Avg</td><td>85.2%</td><td>95.9%</td><td>88.9</td><td>$759</td><td>$699</td><td class="pos">108.5</td><td>$647</td><td>$671</td><td>96.4</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">Source: STR Monthly · April 2026 comp set indices.</div>
+    </div>
+
+    <div class="tldr" style="margin-top:18px;">
+      <div class="tag">DOW read</div>
+      <p>The compositional shift from Q1: <strong>Tuesday MPI lifted from 73 to 90</strong> — a clear weekday demand-build win. Wednesday MPI 87 and ARI 119 reflects rate strength on a midweek demand day. Sunday remains the softest day (MPI 72) — Sun/Mon are now the visible weekday-build target. Weekend ARI 108.5 confirms rate is cleared on the demand peak. Carrying the Tuesday-style demand build to Sunday/Monday is the explicit May/June operational priority.</p>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">5C · Room Type Performance · April 2026</div>
+    <h2 class="ph">King Balcony still anchors. Penthouses lift the rate ceiling.</h2>
+    <p class="plede">Of the 11 room categories sold in April (scaled to GL basis), King Balcony alone generated 35.1% of room revenue across 405 nights at $586 ADR — still the volume engine. The two Penthouse categories (Three Bedroom and Two Bedroom) drove $56K in revenue at $1,456 / $1,258 ADR — the rate ceiling. Suite categories (One Bedroom, One Bedroom Balcony, One Bedroom Accessible) collectively delivered ~25% of revenue at $535–$716 ADR.</p>
+
+    <div class="card">
+      <table class="data" style="font-size:12.5px;">
+        <thead>
+          <tr><th>Room Type</th><th>RNs</th><th>ADR</th><th>Revenue</th><th>% of Rooms Rev</th></tr>
+        </thead>
+        <tbody>
+          <tr class="us"><td>King Balcony</td><td>405</td><td>$585.83</td><td>$237,260</td><td>35.1%</td></tr>
+          <tr><td>One Bedroom Suite</td><td>225</td><td>$534.99</td><td>$120,374</td><td>17.8%</td></tr>
+          <tr><td>King</td><td>198</td><td>$474.61</td><td>$93,973</td><td>13.9%</td></tr>
+          <tr><td>King Flat</td><td>133</td><td>$535.13</td><td>$71,173</td><td>10.5%</td></tr>
+          <tr><td>One Bedroom Balcony Suite</td><td>54</td><td>$715.88</td><td>$38,657</td><td>5.7%</td></tr>
+          <tr><td>Three Bedroom Penthouse</td><td>22</td><td>$1,456.03</td><td>$32,033</td><td>4.7%</td></tr>
+          <tr><td>Balcony Loft</td><td>44</td><td>$680.42</td><td>$29,938</td><td>4.4%</td></tr>
+          <tr><td>Two Bedroom Penthouse</td><td>19</td><td>$1,258.35</td><td>$23,909</td><td>3.5%</td></tr>
+          <tr><td>Courtyard Loft</td><td>23</td><td>$480.63</td><td>$11,055</td><td>1.6%</td></tr>
+          <tr><td>One Bedroom Accessible Suite</td><td>14</td><td>$684.28</td><td>$9,580</td><td>1.4%</td></tr>
+          <tr><td>King Accessible</td><td>18</td><td>$480.56</td><td>$8,650</td><td>1.3%</td></tr>
+          <tr class="total"><td>Total</td><td>1,155</td><td>$585.80</td><td>$676,601</td><td>100%</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">April 2026 · Room-type mix from PMS Nights tab (April-only), scaled to GL Net Rental Revenue basis of $676,601. King Balcony highlighted as the volume anchor.</div>
+    </div>
+
+    <div class="two" style="margin-top:18px;">
+      <div class="card">
+        <h3>Room-type insight</h3>
+        <h2>Penthouse and Suite ADRs lifted materially in April</h2>
+        <ul>
+          <li><strong>Three Bedroom Penthouse</strong> closed at $1,456 ADR — +$335 vs Q1 average. Mix richness on top of the rate breakout.</li>
+          <li><strong>One Bedroom Balcony Suite</strong> at $716 ADR (vs $527 in Q1) — premium-suite demand validates pricing.</li>
+          <li><strong>King Balcony</strong> ADR moved to $586 (vs $386 in Q1) — the volume anchor lifted +$200 month-over-quarter.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <h3>The read</h3>
+        <h2>Rate and mix moved together</h2>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>Volume anchor:</strong> King Balcony 35.1% of revenue at $586 ADR — appropriately positioned and now priced +$200 above Q1.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>Premium tail:</strong> Penthouses + One Bedroom Balcony Suite = 13.9% of revenue at $716–$1,456 ADR. Healthy, growing, and at the highest ADR tier the property has carried.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0;"><strong>May/Jun lever:</strong> Continue surfacing One Bedroom Suite upsell from Standard King at booking — $535 vs $475 = $60 incremental ADR per successful upgrade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Section 5 · Takeaways</div>
+    <h2 class="ph">Mix and rate both moved up — the demand peak validated the pricing model.</h2>
+
+    <div class="take">
+      <div class="t g">
+        <h4>Strengths</h4>
+        <p>Tuesday MPI lifted from 73 (Q1) to 90 (April) — weekday build working. Wed/Thu/Fri ARI 107–125 — rate above comp on demand-peak days. Penthouse and Suite ADRs lifted $200–$500 from Q1.</p>
+      </div>
+      <div class="t">
+        <h4>Watchout</h4>
+        <p>Sunday MPI still 72 — softest day of the week. Monday MPI 73 — still 17 points behind comp. RGI on weekends sits at 95–98 — rate parity is real but volume gap holds property below comp set on Sat/Sun RevPAR.</p>
+      </div>
+      <div class="t i">
+        <h4>Opportunity</h4>
+        <p>Sun/Mon are now the explicit volume targets — same playbook as Q1's Mon/Tue work. 3-night midweek extended-stay packaging is the highest-leverage move. Penthouse demand pattern is replicable in May/June if pricing holds discipline.</p>
+      </div>
+      <div class="t w">
+        <h4>Next step</h4>
+        <p>Sun/Mon packaging launch by May 15. Hold midweek rate position. Keep upsell ladder at booking from Standard King → One Bedroom Suite. Monitor Three Bedroom Penthouse pickup pace for June/July.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 6 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-6">
+    <div class="sidebar-num">Section · 06</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 6</div>
+      <h2>STR Performance · April</h2>
+    </div>
+    <div class="right">STAR Report · April 2026<br>Charleston Luxury Comp Set</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">STR Executive Summary</div>
+    <h2 class="ph">ARI 110.7 — the strongest rate index of the inaugural year. ADR rank #2 of 7.</h2>
+    <p class="plede">The Nickel ran <strong>ARI 110.7 in April 2026</strong> — the highest monthly rate index since opening, and ADR ranking moved to <strong>#2 of 7 in the Charleston comp set</strong> for the first time. Occupancy index (MPI 84.7) softened slightly vs March (was 86.4) on a 1.5-point Occ miss; RGI lifted to <strong>93.7</strong> (from 89.2 in March) — the closest the property has been to comp-set RevPAR parity. The 11-month ramp from MPI 33.7 (Jun '25) to 84.7 (Apr '26) and ARI from 94 to 111 over the same period is the cleanest signal of stabilization yet.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">MPI · April 2026</div><div class="val">84.7</div><div class="delta dn">-1.8 pts vs March</div><div class="sub">Occ 77.5% vs Comp 91.6%</div></div>
+      <div class="kpi"><div class="lbl">ARI · April 2026</div><div class="val">110.7</div><div class="delta">+7.4 pts vs March</div><div class="sub">ADR $595 vs Comp $538</div></div>
+      <div class="kpi"><div class="lbl">RGI · April 2026</div><div class="val">93.7</div><div class="delta">+4.5 pts vs March</div><div class="sub">RevPAR $461 vs Comp $492</div></div>
+      <div class="kpi"><div class="lbl">Comp Set Rank · ADR</div><div class="val">2 / 7</div><div class="delta">New peak rank · was #3</div><div class="sub">First month at #2 of 7</div></div>
+    </div>
+
+    <div class="tldr">
+      <div class="tag">The read</div>
+      <p><strong>Rate is now the leadership position, not the build.</strong> ARI 110.7 is the second time the property has cleared rate parity (Mar 103, Apr 111) — the trend is sticky. The single open question is whether sustained rate above $580 can travel into May/June, when the forecast contemplates ADR softening to $520/$438. <strong>RGI 93.7 means RevPAR is within $31 of the comp set</strong> for the first time. Occupancy gap (MPI 84.7) is now the only remaining structural lift to a stabilized property.</p>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Index Matrix · The Nickel vs Comp Set</div>
+    <h2 class="ph">Three time windows tell the same story.</h2>
+
+    <div class="card" style="padding:18px 22px;">
+      <table class="data" style="font-size:12.5px;">
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Occ · Nickel</th>
+            <th>Occ · Comp</th>
+            <th>MPI</th>
+            <th>ADR · Nickel</th>
+            <th>ADR · Comp</th>
+            <th>ARI</th>
+            <th>RevPAR · Nickel</th>
+            <th>RevPAR · Comp</th>
+            <th>RGI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Current Month (Apr '26)</td><td>77.5%</td><td>91.6%</td><td>84.7</td><td>$595</td><td>$538</td><td class="pos"><strong>110.7</strong></td><td>$461</td><td>$492</td><td>93.7</td></tr>
+          <tr><td>YTD 2026 (through April)</td><td>64.6%</td><td>80.8%</td><td>79.9</td><td>$470</td><td>$447</td><td class="pos"><strong>105.1</strong></td><td>$304</td><td>$361</td><td>84.0</td></tr>
+          <tr><td>Running 3-Mo (Feb–Apr)</td><td>72.5%</td><td>87.5%</td><td>82.9</td><td>$504</td><td>$481</td><td class="pos"><strong>104.7</strong></td><td>$366</td><td>$421</td><td>86.8</td></tr>
+          <tr><td>Running 12-Mo</td><td>50.4%</td><td>79.7%</td><td>63.3</td><td>$438</td><td>$429</td><td class="pos"><strong>102.1</strong></td><td>$221</td><td>$342</td><td>64.6</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">MPI (occupancy), ARI (ADR), and RGI (RevPAR) are indexed against the Charleston comp set, where 100 = parity. Comp set: 6 hotels. Source: STR Monthly STAR · April 2026.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Monthly Index Trend · Jun '25 → Apr '26</div>
+    <h2 class="ph">An 11-month ramp. MPI has more than doubled; ARI has cleared parity twice running.</h2>
+
+    <div class="card" style="padding:18px 22px;">
+      <table class="data" style="font-size:12px;">
+        <thead><tr><th>Month</th><th>My Occ</th><th>Comp Occ</th><th>MPI</th><th>My ADR</th><th>Comp ADR</th><th>ARI</th><th>My RevPAR</th><th>Comp RevPAR</th><th>RGI</th></tr></thead>
+        <tbody>
+          <tr><td>Jun 2025</td><td>29.2%</td><td>86.7%</td><td class="neg">33.7</td><td>$400</td><td>$425</td><td>94.1</td><td>$117</td><td>$369</td><td class="neg">31.7</td></tr>
+          <tr><td>Jul 2025</td><td>29.9%</td><td>80.6%</td><td class="neg">37.1</td><td>$342</td><td>$361</td><td>94.8</td><td>$102</td><td>$291</td><td class="neg">35.2</td></tr>
+          <tr><td>Aug 2025</td><td>31.1%</td><td>76.2%</td><td class="neg">40.8</td><td>$336</td><td>$352</td><td>95.6</td><td>$105</td><td>$268</td><td class="neg">39.0</td></tr>
+          <tr><td>Sep 2025</td><td>52.6%</td><td>74.2%</td><td>70.9</td><td>$367</td><td>$427</td><td>85.9</td><td>$193</td><td>$317</td><td>60.9</td></tr>
+          <tr><td>Oct 2025</td><td>50.1%</td><td>81.3%</td><td>61.6</td><td>$531</td><td>$483</td><td class="pos">110.0</td><td>$266</td><td>$393</td><td>67.8</td></tr>
+          <tr><td>Nov 2025</td><td>61.3%</td><td>77.3%</td><td>79.4</td><td>$421</td><td>$432</td><td>97.5</td><td>$258</td><td>$334</td><td>77.4</td></tr>
+          <tr><td>Dec 2025</td><td>42.3%</td><td>71.8%</td><td>58.9</td><td>$415</td><td>$372</td><td class="pos">111.4</td><td>$175</td><td>$267</td><td>65.6</td></tr>
+          <tr><td>Jan 2026</td><td>41.6%</td><td>61.6%</td><td>67.5</td><td>$301</td><td>$308</td><td>97.8</td><td>$125</td><td>$190</td><td>66.0</td></tr>
+          <tr><td>Feb 2026</td><td>62.1%</td><td>81.2%</td><td>76.5</td><td>$374</td><td>$398</td><td>93.9</td><td>$232</td><td>$323</td><td>71.9</td></tr>
+          <tr><td>Mar 2026</td><td>77.1%</td><td>89.2%</td><td>86.4</td><td>$510</td><td>$494</td><td class="pos">103.2</td><td>$393</td><td>$441</td><td>89.2</td></tr>
+          <tr class="us"><td>Apr 2026</td><td>77.5%</td><td>91.6%</td><td>84.7</td><td>$595</td><td>$538</td><td class="pos">110.7</td><td>$461</td><td>$492</td><td>93.7</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">Property opened mid-2025. April 2026 is the highest single-month ARI of the inaugural year and the first month of #2-of-7 ADR rank. ADR has cleared 100 in 4 of the last 7 months.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">April 2026 · Position vs Submarket &amp; Market</div>
+    <h2 class="ph">Where The Nickel sits in the Charleston hierarchy.</h2>
+
+    <div class="card" style="padding:18px 22px;">
+      <table class="data" style="font-size:12.5px;">
+        <thead><tr><th>Set</th><th>Occupancy</th><th>ADR</th><th>RevPAR</th></tr></thead>
+        <tbody>
+          <tr class="us"><td>The Nickel Hotel</td><td>77.5%</td><td>$595.01</td><td>$461.33</td></tr>
+          <tr><td>Comp Set (luxury named)</td><td>91.6%</td><td>$537.67</td><td>$492.29</td></tr>
+          <tr><td>SubmarketCol: Luxury &amp; Upper Upscale</td><td>83.0%</td><td>$491.17</td><td>—</td></tr>
+          <tr><td>MarketClass: Luxury</td><td>79.1%</td><td>$561.13</td><td>—</td></tr>
+          <tr><td>Submarket: Charleston/West Ashley</td><td>83.0%</td><td>$350.22</td><td>—</td></tr>
+          <tr><td>Market: Charleston SC USA</td><td>82.5%</td><td>$219.38</td><td>$180.96</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">April 2026 · Source: STR Summary tab. The Nickel ADR ($595) leads the broader luxury market by $34 vs MarketClass Luxury and $104 vs SubmarketCol Luxury &amp; Upper Upscale.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Strategic Read</div>
+    <h2 class="ph">Rate leadership locked. Occupancy is the remaining lever.</h2>
+
+    <div class="two half">
+      <div class="card">
+        <h3>Where we sit</h3>
+        <h2>Position &amp; share</h2>
+        <ul>
+          <li><strong>Rate-leader confirmed.</strong> ARI 111 in April is the second consecutive month above 100 and the highest of the inaugural year. ADR rank moved to #2 of 7 — best position to date.</li>
+          <li><strong>Occupancy still ramping.</strong> MPI improved from 33.7 (Jun '25) to 84.7 (Apr '26). The trajectory is consistent, with one small dip in April (-1.8 pts vs March).</li>
+          <li><strong>Outpacing broader luxury market.</strong> ADR +$34 vs MarketClass Luxury and +$104 vs SubmarketCol — outperformance isn't just vs the named comp set.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Where the gap is</h3>
+        <h2>MPI shortfall, by day-of-week</h2>
+        <ul>
+          <li><strong>Sun–Mon MPI 72–73</strong> — Sunday is now the softest day. The Mon/Tue weekday-build playbook from Q1 worked; Sun is the new target.</li>
+          <li><strong>Tue–Sat at near-parity.</strong> MPI 86–92 on demand-build and demand-peak days. Tuesday lifted from MPI 73 (Q1) to 90 (Apr).</li>
+          <li><strong>Comp set rank:</strong> 2 of 7 on ADR · 7 of 7 on Occ · 5 of 7 on RevPAR (Apr '26). RGI rank improved from 5/7 (Q1) — still #5 in April.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two half" style="margin-top:18px;">
+      <div class="card">
+        <h3>Trend trajectory</h3>
+        <h2>Where this is going</h2>
+        <ul>
+          <li><strong>April was the inflection on rate rank.</strong> Moving from #3 to #2 of 7 ADR is a step change in market position.</li>
+          <li><strong>RGI within $31 of comp set.</strong> RevPAR gap has narrowed from $254 (Jun '25) to $31 (Apr '26).</li>
+          <li><strong>Penthouse and Suite demand growing.</strong> Mix richness is contributing to ARI, not just a pricing decision.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Opportunity &amp; concern</h3>
+        <h2>Watch-items</h2>
+        <ul>
+          <li><strong>Opportunity:</strong> Closing the Sun MPI gap from 72 to 80 lifts blended Q2 RevPAR by ~$20 — without rate concession.</li>
+          <li><strong>Concern:</strong> May/Jun/Jul forecast contemplates ADR softening to $520/$438/$365. April's $595 is materially above all three — sustaining rate strength is the upside lever.</li>
+          <li><strong>Watch:</strong> Comp set RevPAR also lifted month-over-month (Mar $441 → Apr $492) — market backdrop healthy, our outperformance is on top of growth.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Section 6 · Takeaways</div>
+    <h2 class="ph">The rate position is now defended. Occupancy is the remaining build.</h2>
+
+    <div class="take">
+      <div class="t g">
+        <h4>Strengths</h4>
+        <p>ARI 110.7 — highest of the inaugural year. ADR rank moved to #2 of 7. RGI 93.7 — RevPAR within $31 of comp set. RevPAR ahead of broader luxury market and SubmarketCol by $30+.</p>
+      </div>
+      <div class="t">
+        <h4>Watchout</h4>
+        <p>Comp-set Occ rank still 7 of 7. MPI dipped -1.8 vs March (84.7 vs 86.4). Sun MPI now 72 — softest day. May/Jun/Jul forecast ADRs are all below April actual; rate-discipline test is real.</p>
+      </div>
+      <div class="t i">
+        <h4>Opportunity</h4>
+        <p>+8 points of Sun MPI alone is worth ~$20 blended RevPAR. Holding ADR above forecast through May/Jun would deliver $50–100K of NOI upside per month vs the rolling plan.</p>
+      </div>
+      <div class="t w">
+        <h4>Next step</h4>
+        <p>Hold rate discipline through the May peak. Stand up a Sun-night package by May 15. Quarterly STR review with revenue management before June 30. Monitor July pickup pace weekly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 7 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-7">
+    <div class="sidebar-num">Section · 07</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 7</div>
+      <h2>Rosemary Rose · April 2026</h2>
+    </div>
+    <div class="right">Outlet Scorecard · MTD<br>Property-level F&amp;B basis</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Rosemary Rose · April 2026</div>
+    <h2 class="ph">F&amp;B Income $334.6K — <span class="em">5.1% above plan</span>, with prime cost <em>improving</em> meaningfully.</h2>
+    <p class="plede" style="font-weight:500;color:var(--navy-deep);">A beverage-led program — <strong>~80% beverage</strong> (Liquor + Wine + Beer + NA) vs <strong>~16% food</strong>, with Liquor alone at <strong>59%</strong> of net sales.</p>
+    <p class="plede">April F&amp;B Income closed at <strong>$334,581 (GL)</strong> / $328,952 net sales (Toast). The bottom-line read is the strongest of the inaugural year: prime cost (COGS + Payroll) ran <strong>48.5% of F&amp;B revenue</strong> vs 66.1% budget — a 1,760-bps favorable swing. F&amp;B Payroll alone came in <strong>$26.8K under plan</strong>. Toast served <strong>7,673 guests</strong> across 4,320 orders / 4,680 payments at a $42.87 average per guest and 49.2-minute average turn time. Quick Service ran 2,560 guests / $130,978 net at the higher PPA ($51.16) — a notable shift from Q1 patterns where Table Service led at higher net dollars per guest. Net contribution margin lifted to <strong>46.3% in April</strong> (vs Q1's 16.9%).</p>
+
+    <p class="plede" style="font-size:13px;color:var(--muted);font-style:italic;margin-top:-12px;">Note: The Nickel P&amp;L treats F&amp;B at the property level (one revenue line, three cost lines: COGS, Payroll, Operating Expenses). Toast adds the Food vs Beverage revenue split, Guest Count, PPA, and Service Mode breakouts below. Food Cost % and Beverage Cost % shown alongside the Toast revenue mix.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">F&amp;B Revenue · April</div><div class="val">$334.6K</div><div class="delta">+5.1% vs Budget</div><div class="sub">GL: $334,581 · Toast Net: $328,952</div></div>
+      <div class="kpi"><div class="lbl">Total Guests · Covers</div><div class="val">7,673</div><div class="delta">$42.87 PPA</div><div class="sub">4,320 orders · 4,680 payments</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Prime Cost %</div><div class="val">48.5%</div><div class="delta">-1,760 bps vs Budget</div><div class="sub">Budget: 66.1% · vs Q1 actual 72.5%</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Contribution</div><div class="val">$155.0K</div><div class="delta">46.3% margin</div><div class="sub">Budget margin: 38.0%</div></div>
+    </div>
+
+    <div class="outlets" style="margin-top:24px;">
+      <div class="outlet good">
+        <div class="outlet-head">
+          <div class="name">Rosemary Rose <span class="em">· April 2026</span></div>
+          <div class="rev">$334,581 <small>F&amp;B Revenue · +5.1% vs Bud</small></div>
+        </div>
+        <div class="outlet-grid">
+          <div><div class="om">F&amp;B COGS</div><div class="ov">$70,884</div><div class="od neg">-$8.6K vs Bud · 21.2% of rev</div></div>
+          <div><div class="om">F&amp;B Payroll</div><div class="ov">$91,533</div><div class="od pos">+$26.8K vs Bud · 27.4% of rev</div></div>
+          <div><div class="om">F&amp;B Operating Exp.</div><div class="ov">$17,157</div><div class="od neg">-$0.3K vs Bud · 5.1% of rev</div></div>
+          <div><div class="om">Prime Cost (COGS + Labor)</div><div class="ov pos">48.5%</div><div class="od pos">-1,760 bps vs 66.1% budget</div></div>
+        </div>
+        <div class="outlet-grid" style="margin-top:14px;grid-template-columns:repeat(4,1fr);">
+          <div><div class="om">Total Guests</div><div class="ov">7,673</div><div class="od">2,560 QS · 5,113 TS</div></div>
+          <div><div class="om">PPA · Avg per Guest</div><div class="ov">$42.87</div><div class="od">QS $51.16 · TS $38.72</div></div>
+          <div><div class="om">Avg per Order</div><div class="ov">$76.15</div><div class="od">4,320 orders total</div></div>
+          <div><div class="om">Avg Turn Time</div><div class="ov">49.2 min</div><div class="od">QS 39.6 · TS 60.5</div></div>
+        </div>
+        <div class="outlet-grid" style="margin-top:14px;grid-template-columns:repeat(4,1fr);">
+          <div><div class="om">Liquor (Toast)</div><div class="ov">$192,903</div><div class="od">58.6% of net sales</div></div>
+          <div><div class="om">Food (Toast)</div><div class="ov">$53,877</div><div class="od">16.4% of net sales</div></div>
+          <div><div class="om">Wine (Toast)</div><div class="ov">$45,549</div><div class="od">13.8% of net sales</div></div>
+          <div><div class="om">Bottled Beer + NA (Toast)</div><div class="ov">$18,086</div><div class="od">5.5% of net sales</div></div>
+        </div>
+        <div class="note">April outlet ran $16K above plan on revenue with prime cost <strong>improving by 1,760 bps</strong> — the cleanest single-month outlet read of the inaugural year. F&amp;B Payroll $91.5K vs $118.3K plan = $26.8K favorable. Quick Service overtook Table Service on PPA ($51.16 vs $38.72) — a behavioral shift from Q1 worth watching. Liquor mix held at ~59% of net sales (consistent with rooftop bar program). Food share lifted from 12% (Q1) to 16% in April — food program scaling continues. <strong>Avg turn time compressed to 49.2 min</strong> (from 58.2 in Q1) — operational efficiency.</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>Service Mode Breakout · April 2026</h3>
+      <h2>Quick Service overtook Table Service on PPA — a structural shift</h2>
+      <table class="data" style="font-size:12.5px;">
+        <thead><tr><th>Mode</th><th>Net Sales</th><th>Guests</th><th>Avg / Guest</th><th>Orders</th><th>Avg / Order</th><th>Avg / Payment</th><th>Turn Time</th></tr></thead>
+        <tbody>
+          <tr><td>Quick Service</td><td>$130,978</td><td>2,560</td><td>$51.16</td><td>2,353</td><td>$55.66</td><td>$64.99</td><td>39.62 min</td></tr>
+          <tr><td>Table Service</td><td>$197,973</td><td>5,113</td><td>$38.72</td><td>1,967</td><td>$100.65</td><td>$95.16</td><td>60.54 min</td></tr>
+          <tr class="total"><td>Total</td><td>$328,952</td><td>7,673</td><td>$42.87</td><td>4,320</td><td>$76.15</td><td>$80.28</td><td>49.15 min</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">Source: Toast Service Mode Summary · April 2026.</div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">April F&amp;B P&amp;L Detail</div>
+    <h2 class="ph">Line-item view of the month.</h2>
+
+    <div class="card">
+      <table class="data">
+        <thead><tr><th></th><th>Actual</th><th>Budget</th><th>vs Bud $</th><th>vs Bud %</th></tr></thead>
+        <tbody>
+          <tr><td>F&amp;B Income</td><td>$334,581</td><td>$318,422</td><td class="pos">+$16,159</td><td class="pos">+5.1%</td></tr>
+          <tr><td>F&amp;B COGS</td><td>$70,884</td><td>$62,281</td><td class="neg">-$8,603</td><td class="neg">-13.8%</td></tr>
+          <tr><td>F&amp;B Payroll</td><td>$91,533</td><td>$118,295</td><td class="pos">+$26,762</td><td class="pos">+22.6%</td></tr>
+          <tr><td>F&amp;B Operating Expenses</td><td>$17,157</td><td>$16,885</td><td class="neg">-$272</td><td class="neg">-1.6%</td></tr>
+          <tr class="subtotal"><td>F&amp;B Total Expenses</td><td>$179,573</td><td>$197,461</td><td class="pos">+$17,888</td><td class="pos">+9.1%</td></tr>
+          <tr class="total"><td>F&amp;B Contribution Margin $</td><td>$155,008</td><td>$120,961</td><td class="pos">+$34,047</td><td class="pos">+28.1%</td></tr>
+          <tr><td>F&amp;B Contribution Margin %</td><td>46.3%</td><td>38.0%</td><td class="pos">+830 bps</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">Source: Budget vs Actual 04.26.xlsx · CS sheet · F&amp;B Expenses block.</div>
+    </div>
+
+    <div class="tldr" style="margin-top:22px;">
+      <div class="tag">April F&amp;B read</div>
+      <p>The <strong>$26.8K F&amp;B Payroll favorable variance</strong> alone is larger than the total revenue beat — labor leverage drove the contribution margin to 46.3% (best of inaugural year). COGS ran 14% over plan tracking the volume beat. Operating Expenses came in at plan ($17K vs $17K) — the Q1 OpEx over-run pattern appears to have normalized. <strong>Food cost % and beverage cost % require monthly invoice detail to break out</strong> (not provided in source files for April) — <strong>[Food/Bev Cost % source not provided]</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 8 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-8">
+    <div class="sidebar-num">Section · 08</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 8</div>
+      <h2>Rosemary Rose · YTD through April</h2>
+    </div>
+    <div class="right">Outlet Scorecard · YTD<br>Property-level F&amp;B basis</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Rosemary Rose · YTD through April 2026</div>
+    <h2 class="ph">YTD F&amp;B closed at $872K — running 8.7% above the YTD plan.</h2>
+    <p class="plede">YTD F&amp;B Income through April reached <strong>$872,201</strong> against a YTD CS Budget of <strong>$822,856</strong> — <strong>+$49,345 / +6.0% above plan</strong> (using the workbook's YTD totals which currently roll Q1 + an updated April line). YTD F&amp;B Total Expenses of $626,261 imply a YTD prime-cost ratio of 64.2% — improving sharply from the Q1 actual of 72.5% as April's leverage flowed through. <strong>YTD contribution margin lifted to 28.2%</strong> (vs Q1 actual 16.9%). The drivers are the same as the April month: F&amp;B Payroll favorable on volume scaling, COGS tracking revenue, OpEx now on-plan after the Q1 over-run.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">F&amp;B Revenue · YTD</div><div class="val">$872.2K</div><div class="delta">+6.0% vs YTD Budget</div><div class="sub">YTD Budget: $822.9K</div></div>
+      <div class="kpi"><div class="lbl">Total Guests · YTD</div><div class="val">22,171</div><div class="delta">$38.34 PPA</div><div class="sub">11,559 orders · 12,898 payments</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Prime Cost %</div><div class="val">64.2%</div><div class="delta">-830 bps vs Q1 actual</div><div class="sub">Q1 actual: 72.5% · April: 48.5%</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Contribution · YTD</div><div class="val">$245.9K</div><div class="delta">28.2% margin</div><div class="sub">Q1 actual margin: 16.9%</div></div>
+    </div>
+
+    <div class="outlets" style="margin-top:24px;">
+      <div class="outlet good">
+        <div class="outlet-head">
+          <div class="name">Rosemary Rose <span class="em">· YTD through April 2026</span></div>
+          <div class="rev">$872,201 <small>F&amp;B Revenue · +6.0% vs Bud</small></div>
+        </div>
+        <div class="outlet-grid">
+          <div><div class="om">F&amp;B COGS · YTD</div><div class="ov">$192,535</div><div class="od neg">-$30.2K vs Bud · 22.1% of rev</div></div>
+          <div><div class="om">F&amp;B Payroll · YTD</div><div class="ov">$359,960</div><div class="od pos">+$46.1K vs Bud · 41.3% of rev</div></div>
+          <div><div class="om">F&amp;B Operating Exp. · YTD</div><div class="ov">$73,767</div><div class="od neg">-$17.1K vs Bud · 8.5% of rev</div></div>
+          <div><div class="om">Prime Cost (COGS + Labor)</div><div class="ov pos">64.2%</div><div class="od pos">-830 bps vs Q1 actual</div></div>
+        </div>
+        <div class="outlet-grid" style="margin-top:14px;grid-template-columns:repeat(4,1fr);">
+          <div><div class="om">Total Guests · YTD</div><div class="ov">22,171</div><div class="od">6,271 QS · 15,900 TS</div></div>
+          <div><div class="om">PPA · Avg per Guest</div><div class="ov">$38.34</div><div class="od">QS $44.83 · TS $35.77</div></div>
+          <div><div class="om">Avg per Order · YTD</div><div class="ov">$73.50</div><div class="od">11,559 orders total</div></div>
+          <div><div class="om">Avg Turn Time · YTD</div><div class="ov">~55 min</div><div class="od">Compressing as ops mature</div></div>
+        </div>
+        <div class="outlet-grid" style="margin-top:14px;grid-template-columns:repeat(4,1fr);">
+          <div><div class="om">Liquor (Toast) · YTD</div><div class="ov">$525,093</div><div class="od">61.8% of net sales</div></div>
+          <div><div class="om">Wine (Toast) · YTD</div><div class="ov">$124,909</div><div class="od">14.7% of net sales</div></div>
+          <div><div class="om">Food (Toast) · YTD</div><div class="ov">$117,172</div><div class="od">13.8% of net sales</div></div>
+          <div><div class="om">Bottled Beer + NA · YTD</div><div class="ov">$48,210</div><div class="od">5.7% of net sales</div></div>
+        </div>
+        <div class="note">YTD outlet view: <strong>F&amp;B Payroll favorable variance is now $46.1K YTD</strong> — the largest single contributor to bottom-line YTD F&amp;B beat. <strong>Food share lifted from 12.1% (Q1) to 13.8% (YTD)</strong> as the April month brought 16.4% food share — the program is scaling. <strong>Note on YTD source:</strong> The 12-Month Budget Actual workbook YTD column was not fully refreshed through April — figures shown here combine Q1 actuals (per source) + April actuals (per Budget vs Actual file). PY YTD comparison [source not provided] — property opened mid-2025 so no comparable YTD through April 2025.</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>Service Mode Breakout · YTD through April</h3>
+      <h2>YTD Quick Service vs Table Service · Toast roll-up</h2>
+      <table class="data" style="font-size:12.5px;">
+        <thead><tr><th>Mode</th><th>Net Sales</th><th>Guests</th><th>Avg / Guest</th><th>Orders</th><th>Avg / Order</th><th>Avg / Payment</th></tr></thead>
+        <tbody>
+          <tr><td>Quick Service</td><td>$281,118</td><td>6,271</td><td>$44.83</td><td>5,847</td><td>$48.08</td><td>$58.46</td></tr>
+          <tr><td>Table Service</td><td>$568,813</td><td>15,900</td><td>$35.77</td><td>5,712</td><td>$99.58</td><td>$93.32</td></tr>
+          <tr class="total"><td>YTD Total</td><td>$849,931</td><td>22,171</td><td>$38.34</td><td>11,559</td><td>$73.53</td><td>$65.90</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">YTD = Q1 (Jan–Mar) Toast totals + April Toast totals. Toast YTD net sales ($849.9K) reconciles to GL F&amp;B YTD ($872.2K) within reporting-vs-GL variance. Source: Sales category summary CSV (April) + Q1 published baseline.</div>
+    </div>
+
+    <div class="tldr" style="margin-top:22px;">
+      <div class="tag">YTD read</div>
+      <p>The Q1 prime-cost win (72.5%) plus April's breakout (48.5%) put the YTD prime-cost ratio at 64.2% — closing in on the underwriting target of 60%. F&amp;B Payroll discipline is the durable lever. Watch-item heading into May/Jun/Jul: <strong>monthly F&amp;B costs in the source file are collapsed into "Prime Costs + Operating Expenses"</strong> with no discrete Payroll line forward — so converting May's actuals will require manual cost-line allocation when the next budget-actual cycle closes.</p>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 9 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-9">
+    <div class="sidebar-num">Section · 09</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 9</div>
+      <h2>Rosemary Rose · May–Jul Forecast</h2>
+    </div>
+    <div class="right">May · June · July<br>Forecast vs Budget</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Rosemary Rose · May–Jul 2026 Forecast</div>
+    <h2 class="ph">Three-month F&amp;B forecast: <span class="em">$961.6K</span> revenue · ~3× the YTD pace through April.</h2>
+    <p class="plede">May/Jun/Jul F&amp;B Income forecast totals <strong>$961,574</strong> across the three months, supported by the hotel demand peak. Shape: <strong>May $360.5K (peak), June $339.1K, July $261.9K</strong> as Charleston heat compresses outlet covers. Forecasted F&amp;B Total Expenses of $577,778 imply a three-month ratio of 60.1% of F&amp;B revenue — a 410-bps improvement over YTD actual (64.2%) but with the same structural caveat as Q1: the forecast file collapses F&amp;B costs into "Prime Costs + Operating Expenses" and does not carry a discrete F&amp;B Payroll line. <strong>The April labor leverage (48.5% prime cost) is not yet built into the forecast</strong> — sustaining that discipline would unlock $50–80K of contribution upside.</p>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="lbl">F&amp;B Revenue · May–Jul</div><div class="val">$961.6K</div><div class="delta">Peak May · $360.5K</div><div class="sub">Jun $339.1K · Jul $261.9K</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Total Expenses · 3-Mo</div><div class="val">$577.8K</div><div class="delta">60.1% of F&amp;B Rev</div><div class="sub">May $207K · Jun $196K · Jul $174K</div></div>
+      <div class="kpi"><div class="lbl">F&amp;B Contribution · 3-Mo</div><div class="val">$383.8K</div><div class="delta">39.9% margin</div><div class="sub">YTD actual margin: 28.2%</div></div>
+      <div class="kpi"><div class="lbl">Peak Month</div><div class="val">May</div><div class="delta">$360.5K F&amp;B Rev</div><div class="sub">Highest forecast month of FY</div></div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">May–Jul F&amp;B Forecast Detail</div>
+    <h2 class="ph">Month-by-month — May through July.</h2>
+
+    <div class="card">
+      <table class="data">
+        <thead><tr><th></th><th>May</th><th>Jun</th><th>Jul</th><th>3-Mo Total</th></tr></thead>
+        <tbody>
+          <tr><td>F&amp;B Income</td><td>$360,545</td><td>$339,084</td><td>$261,945</td><td>$961,574</td></tr>
+          <tr><td>F&amp;B Prime Costs</td><td>$188,599</td><td>$178,996</td><td>$158,796</td><td>$526,391</td></tr>
+          <tr><td>F&amp;B Operating Expenses</td><td>$18,286</td><td>$17,432</td><td>$15,671</td><td>$51,388</td></tr>
+          <tr class="subtotal"><td>F&amp;B Total Expenses</td><td>$206,885</td><td>$196,427</td><td>$174,466</td><td>$577,778</td></tr>
+          <tr class="total"><td>F&amp;B Contribution $</td><td>$153,660</td><td>$142,657</td><td>$87,479</td><td>$383,796</td></tr>
+          <tr><td>F&amp;B Total Expense %</td><td>57.4%</td><td>57.9%</td><td>66.6%</td><td>60.1%</td></tr>
+          <tr><td>F&amp;B Contribution %</td><td>42.6%</td><td>42.1%</td><td>33.4%</td><td>39.9%</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">Source: "12 Month Budget Actual_04.26 copy" · CS Budget sheet · May (col 13, Forecast) / Jun (col 15, Budget) / Jul (col 17, Budget). F&amp;B Payroll separated into property Compensation line in the forward look — Prime Costs combine COGS + Labor here. PY n/a.</div>
+    </div>
+
+    <div class="two" style="margin-top:18px;">
+      <div class="card">
+        <h3>Outlet forecast read</h3>
+        <h2>The shape of the summer</h2>
+        <ul>
+          <li><strong>May is the peak.</strong> $360.5K F&amp;B Revenue + $153.7K contribution — the highest absolute F&amp;B contribution month of the forecast.</li>
+          <li><strong>June holds.</strong> $339K revenue + $143K contribution — only -$11K vs May despite the rate-side easing.</li>
+          <li><strong>July softens.</strong> $262K revenue + $87K contribution — driven by both lower hotel occupancy (75%) and lower outlet volume.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <h3>Forecast vs April actual reality</h3>
+        <h2>Three operational watch-items</h2>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>Labor leverage.</strong> April's 48.5% prime cost is not baked in — Prime Cost forecast for May (Prime $188.6K / Rev $360.5K = 52.3%) is materially higher than April actual. Sustaining April discipline is $20–30K monthly upside.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0 0 10px;"><strong>July hand-off.</strong> Forecast contribution margin drops from 42% (May/Jun) to 33% in July — the program needs an explicit July labor scale-down plan to hold contribution.</p>
+        <p style="font-size:13px;line-height:1.6;margin:0;"><strong>OpEx normalization.</strong> April Operating Expenses ran on plan after Q1's over-run — confirm the line holds for May/Jun before treating Q1 as the new normal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 10 BAND · MARKETING ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-10">
+    <div class="sidebar-num">Section · 10</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 10</div>
+      <h2>Marketing</h2>
+    </div>
+    <div class="right">April 2026<br>Calendar · Email · Press · Campaigns · Social</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Marketing · April 2026</div>
+    <h2 class="ph">Owned, earned, and paid all firing in the same direction.</h2>
+    <p class="plede">April saw the email program clear $37K of attributable revenue, four high-tier press placements (Hospitality Design + Travel + Leisure), a Meta video ad supporting the T+L campaign, a Private Events campaign launch ("Storied Soirée"), a Summer Offer in market, an RMR rooftop collab dinner ("The Establishment"), and continued IG follower growth across both handles. Sub-blocks below match the asset folders.</p>
+
+    <!-- ===== 10·HERO — Video Creative · Q2 Campaigns ===== -->
+    <div class="mkt-hero">
+      <div class="mkt-hero-head">
+        <div class="lbl">10 · Hero</div>
+        <h3>Video Creative — Q2 Campaigns</h3>
+      </div>
+      <div class="mkt-hero-grid">
+        <div class="mkt-hero-item">
+          <div class="frame-wrap">
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="Nickel Ops Update/T+L Ad/TheNickel_MetaAd_1080_1920.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="caption-block">
+            <div class="placement">Travel + Leisure It List</div>
+            <div class="nm">T+L Ad</div>
+            <div class="results">Meta / IG placements · results pending</div>
+          </div>
+          <div class="unmute-cap">Click to unmute.</div>
+          <div class="mkt-hero-qr">
+            <img src="Nickel Ops Update/_qr/tl_ad_qr.png" alt="QR code linking to T+L Meta Ad video" />
+            <div class="qr-cap">Scan to view T+L Meta Ad video</div>
+          </div>
+        </div>
+        <div class="mkt-hero-item">
+          <div class="frame-wrap">
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="Nickel Ops Update/Private Events Campaign/Nickel_Events_Ad_StoriedSoiree_1080_1920.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="caption-block">
+            <div class="placement">Private Events launch</div>
+            <div class="nm">Storied Soirée</div>
+            <div class="results">Meta / IG Stories · results pending</div>
+          </div>
+          <div class="unmute-cap">Click to unmute.</div>
+          <div class="mkt-hero-qr">
+            <img src="Nickel Ops Update/_qr/storied_soiree_qr.png" alt="QR code linking to Storied Soirée video" />
+            <div class="qr-cap">Scan to view Storied Soirée video</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 10A · Marketing Calendar ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10A · Marketing Calendar</div>
+      <h3 class="mkt-sub">Q1 actuals · Q2 in flight.</h3>
+      <p class="lede">Q1 closed in full — all campaigns shipped. Q2 in flight with the T+L award promotion, Private Events launch, Summer Offer, and the 4/30 Establishment Dinner all live or imminent. Q3 / Q4 calendar items are tracked but out of scope for the April recap.</p>
+      <div class="mkt-grid">
+        <div class="col-6">
+          <div class="mkt-cal-wrap">
+            <div class="qh">Q1 · Actuals (shipped)</div>
+            <img src="Nickel Ops Update/Marketing Calendar/Marketing Calendar Q1.jpg" alt="Marketing Calendar Q1 — actuals" />
+          </div>
+          <div class="mkt-cap">Q1 2026 · all campaigns shipped</div>
+        </div>
+        <div class="col-6">
+          <div class="mkt-cal-wrap">
+            <div class="qh">Q2 · In flight</div>
+            <img src="Nickel Ops Update/Marketing Calendar/Marketing Calendar Q2.jpg" alt="Marketing Calendar Q2 — in flight" />
+          </div>
+          <div class="mkt-cap">Q2 2026 · live + imminent</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 10B · Email Performance ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10B · Email Performance</div>
+      <h3 class="mkt-sub">$37K of email-attributable revenue · last 30 days.</h3>
+      <p class="lede">Email program delivered <strong>$37,037</strong> in attributable revenue over the trailing 30 days — a 2,753% lift vs the $1,298 prior comparable window. Audience reached: 6,026 deliveries. Open rate 16.6%; CTR 1.6%. Source: <em>Email Performance.jpg</em> (vision-transcribed).</p>
+      <div class="mkt-grid">
+        <div class="col-3">
+          <div class="mkt-kpi-cell">
+            <div class="lbl">Email Revenue</div>
+            <div class="val">$37,037</div>
+            <div class="delta">↗ +2,753.4% vs $1,298</div>
+            <div class="sub">Last 30 days</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mkt-kpi-cell">
+            <div class="lbl">Audience Reached</div>
+            <div class="val">6,026</div>
+            <div class="sub">Total Delivered · Last 30 days</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mkt-kpi-cell">
+            <div class="lbl">Open Rate</div>
+            <div class="val">16.6%</div>
+            <div class="sub">Last 30 days</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mkt-kpi-cell">
+            <div class="lbl">CTR</div>
+            <div class="val">1.6%</div>
+            <div class="sub">Last 30 days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 10C · Press ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10C · Press</div>
+      <h3 class="mkt-sub">Two tier-1 placements live in the period.</h3>
+      <p class="lede">Hospitality Design carries trade credibility (HD Awards finalist coverage); Travel + Leisure It List delivers the highest-tier traveler reach. Both placements are part of the broader Q1/Q2 press drumbeat.</p>
+      <div class="mkt-grid">
+        <div class="col-6">
+          <div class="mkt-press-card">
+            <div class="pbody"><img src="Nickel Ops Update/Press/Press HD.jpg" alt="Hospitality Design press feature" /></div>
+            <div class="pcap">
+              <div class="pub">Hospitality Design</div>
+              <div class="nm">HD Awards Finalist coverage</div>
+              <div class="dt">Date — [please confirm]</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mkt-press-card">
+            <div class="pbody"><img src="Nickel Ops Update/Press/Press T+L.jpg" alt="Travel + Leisure It List press feature" /></div>
+            <div class="pcap">
+              <div class="pub">Travel + Leisure</div>
+              <div class="nm">It List · 100 Best New Hotels</div>
+              <div class="dt">Date — [please confirm]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 10D omitted — T+L has no static creative beyond the hero video ===== -->
+
+    <!-- ===== 10E · Private Events Campaign — Storied Soirée (supporting creative) ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10E · Storied Soirée — supporting</div>
+      <h3 class="mkt-sub">Landing page + static creative.</h3>
+      <p class="lede">Static creative supporting the Storied Soirée video campaign (shown in the hero above) — landing page driving conversion and the digital static ad. Aimed at the Charleston wedding-planner and corporate buyout pipelines.</p>
+      <div class="mkt-grid">
+        <div class="col-6">
+          <div class="mkt-asset"><img src="Nickel Ops Update/Private Events Campaign/The Nickel Hotel Private Events Landing.png" alt="Private Events landing page screenshot" /></div>
+          <div class="mkt-cap">Landing page</div>
+        </div>
+        <div class="col-6">
+          <div class="mkt-asset"><img src="Nickel Ops Update/Private Events Campaign/The Nickel Hotel Private Events.jpg" alt="Private Events static ad creative" /></div>
+          <div class="mkt-cap">Static ad creative</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 10F · Summer Offer ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10F · Summer Offer</div>
+      <h3 class="mkt-sub">Summer Offer.</h3>
+      <p class="lede">Summer rate-promo campaign — landing page driving conversion, supported by a dedicated email creative in the email program.</p>
+      <div class="mkt-grid">
+        <div class="col-6">
+          <div class="mkt-asset"><img src="Nickel Ops Update/Summer Offer/Nickel Summer Offer Landing.jpg" alt="Summer Offer landing page" /></div>
+          <div class="mkt-cap">Landing page</div>
+        </div>
+        <div class="col-6">
+          <div class="mkt-asset"><img src="Nickel Ops Update/Summer Offer/Nickel Summer Offer Email.jpg" alt="Summer Offer email creative" /></div>
+          <div class="mkt-cap">Email creative</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 10G · RMR Collab Dinner ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10G · RMR Collab Dinner</div>
+      <h3 class="mkt-sub">The Establishment Dinner · IG Stories.</h3>
+      <p class="lede">Rooftop collaboration dinner with The Establishment — four IG Stories driving awareness ahead of the 4/30 event. Story strip below mirrors the Instagram feed view.</p>
+      <div class="mkt-grid">
+        <div class="col-3"><div class="mkt-story-cell"><img src="Nickel Ops Update/RMR Collab Dinner/RMR Establishment Dinner Stories 1.jpg" alt="Establishment Dinner Story 1" /></div><div class="mkt-cap">Story 1</div></div>
+        <div class="col-3"><div class="mkt-story-cell"><img src="Nickel Ops Update/RMR Collab Dinner/RMR Establishment Dinner Stories 2.jpg" alt="Establishment Dinner Story 2" /></div><div class="mkt-cap">Story 2</div></div>
+        <div class="col-3"><div class="mkt-story-cell"><img src="Nickel Ops Update/RMR Collab Dinner/RMR Establishment Dinner Stories 3.jpg" alt="Establishment Dinner Story 3" /></div><div class="mkt-cap">Story 3</div></div>
+        <div class="col-3"><div class="mkt-story-cell"><img src="Nickel Ops Update/RMR Collab Dinner/RMR Establishment Dinner Stories 4.jpg" alt="Establishment Dinner Story 4" /></div><div class="mkt-cap">Story 4</div></div>
+      </div>
+    </div>
+
+    <!-- ===== 10H · Social Performance ===== -->
+    <div class="mkt-block">
+      <div class="mkt-sub-kicker">10H · Social Performance</div>
+      <h3 class="mkt-sub">@TheNickelHotel +228 · @RosemaryRose +208 in period.</h3>
+      <p class="lede">Both handles compounding follower growth in the reporting window. @TheNickelHotel at 9.6K followers (+228 evolution) on 168 posts; @RosemaryRose at 5.5K followers (+208 evolution) on 69 posts. Source: <em>Nickel Stats.jpg</em> + <em>RMR Stats.jpg</em> (vision-transcribed).</p>
+
+      <div class="mkt-grid">
+        <div class="col-6">
+          <div class="mkt-stats-card">
+            <div class="handle">The Nickel <span class="em">Hotel</span></div>
+            <div class="meta">@TheNickelHotel · Instagram</div>
+            <table>
+              <tr><td>Followers</td><td>9,641</td></tr>
+              <tr><td>Followers (rounded)</td><td>9.6K</td></tr>
+              <tr><td>Followers evolution</td><td>+228</td></tr>
+              <tr><td>Posts</td><td>168</td></tr>
+              <tr><td>Following</td><td>173</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mkt-stats-card">
+            <div class="handle">Rosemary <span class="em">Rose</span></div>
+            <div class="meta">@RosemaryRose · Bar Panoramique · Instagram</div>
+            <table>
+              <tr><td>Followers</td><td>5,461</td></tr>
+              <tr><td>Followers (rounded)</td><td>5.5K</td></tr>
+              <tr><td>Followers evolution</td><td>+208</td></tr>
+              <tr><td>Posts</td><td>69</td></tr>
+              <tr><td>Following</td><td>62</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="mkt-grid" style="margin-top:24px;">
+        <div class="col-4">
+          <div class="mkt-feed-square"><img src="Nickel Ops Update/Social/Nickel Feed.png" alt="The Nickel Hotel Instagram feed snapshot" /></div>
+          <div class="mkt-cap">@TheNickelHotel · feed</div>
+        </div>
+        <div class="col-4">
+          <div class="mkt-feed-square"><img src="Nickel Ops Update/Social/RMR Feed.png" alt="Rosemary Rose Instagram feed snapshot" /></div>
+          <div class="mkt-cap">@RosemaryRose · feed</div>
+        </div>
+        <div class="col-4">
+          <div class="mkt-feed-square"><img src="Nickel Ops Update/Social/Most Engaging Posts.png" alt="Most engaging posts across handles" /></div>
+          <div class="mkt-cap">Most engaging posts</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tldr" style="margin-top:28px;">
+      <div class="tag">Marketing read</div>
+      <p>April marketing closed with all four channels firing: email at $37K attributable revenue, two tier-1 press placements (HD + T+L), three concurrent campaigns in market (T+L Meta ad, Storied Soirée private events, Summer Offer), and a high-touch on-property activation (Establishment Dinner). Social growth compounded across both handles (+228 / +208 in period). The Q2 calendar drumbeat is on plan; Q3/Q4 build remains tracked separately.</p>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 11 BAND ===================== -->
+  <div class="backtocontents-wrap"><a class="backtocontents" href="#contents">Back to Contents</a></div>
+
+  <div class="sectionband" id="section-11">
+    <div class="sidebar-num">Section · 11</div>
+    <div class="sb-inner">
+      <div class="lbl">Section 11</div>
+      <h2>Q2/Q3 Priorities &amp; Risk / Opportunity</h2>
+    </div>
+    <div class="right">Forward Look · May–Jul 2026<br>Hotel + Rosemary Rose</div>
+  </div>
+
+  <section class="part">
+    <div class="kicker">Q2/Q3 2026 Priorities · Flagged for review</div>
+    <h2 class="ph">Six priorities. Three for the hotel. Three for Rosemary Rose.</h2>
+    <p class="plede">April closed ahead of plan on rate, NOI, sentiment, and rate index — and crossed the first standalone-profitable month. The Q2/Q3 priorities frame the work to <strong>defend the rate leadership</strong> (ARI 111 needs to travel into May/June even as forecast ADRs compress), <strong>close the residual occupancy gap</strong> (Sun/Mon MPI 72/73), and <strong>convert April's outlet labor leverage into a structural cost-base change</strong> through the summer ramp. <em>All priorities flagged for owner/operator review before committing to ownership reporting.</em></p>
+
+    <div class="priocards">
+      <div class="prio">
+        <h3>Hotel · Priority 1 · <em>Flagged for review</em></h3>
+        <h2>Defend the ARI 110 rate position.</h2>
+        <p>April cleared ARI 110.7 — highest of the inaugural year, #2 of 7 ADR rank. May/Jun/Jul forecast ADRs are $30–230 below April actual. The work is sustaining rate above the rolling forecast — every $30 of ADR above plan = ~$15–20 RevPAR upside on stabilized occupancy. No OTA-NREF discount reflex.</p>
+        <div class="meta">Metric: ARI ≥ 105 May, ≥ 100 Jun/Jul. Owner: Revenue Management</div>
+      </div>
+
+      <div class="prio">
+        <h3>Hotel · Priority 2 · <em>Flagged for review</em></h3>
+        <h2>Close the Sun–Mon MPI gap.</h2>
+        <p>April's Tuesday MPI lifted from 73 (Q1) to 90 — the weekday-build playbook worked. Sun MPI is now 72 / Mon MPI 73 — the new weekday-build target. Lever: Sun-night extended-stay packaging, midweek-3-night offers, off-peak rate fences.</p>
+        <div class="meta">Metric: Sun MPI ≥ 80 by June, Mon MPI ≥ 80 by July. Owner: Revenue Management + Marketing</div>
+      </div>
+
+      <div class="prio">
+        <h3>Hotel · Priority 3 · <em>Flagged for review</em></h3>
+        <h2>Trend Other Non-Op against $0 budget.</h2>
+        <p>YTD-through-April Other Non-Op is $182.5K against a $0 verified budget. Same intentional-zero pattern as Q1. Trend through May to baseline run-rate; ownership should set a non-budget expectation for the line by June so the variance reporting reads cleanly.</p>
+        <div class="meta">Metric: Confirmed monthly run-rate by 6/30. Owner: Finance + Ownership</div>
+      </div>
+
+      <div class="prio">
+        <h3>Rosemary Rose · Priority 1 · <em>Flagged for review</em></h3>
+        <h2>Convert April labor leverage to structural.</h2>
+        <p>April F&amp;B Payroll came in $26.8K under plan — prime cost 48.5% vs 66.1% plan. The forecast hasn't picked up this discipline. The work is making the April scheduling pattern (lower labor-per-cover) the May/Jun baseline, not a one-off. $20–30K of monthly contribution upside if sustained.</p>
+        <div class="meta">Metric: Labor % of F&amp;B Revenue ≤ 30% in May/Jun. Owner: Rosemary Rose GM</div>
+      </div>
+
+      <div class="prio">
+        <h3>Rosemary Rose · Priority 2 · <em>Flagged for review</em></h3>
+        <h2>Plan the July step-down.</h2>
+        <p>July forecast F&amp;B contribution margin drops to 33% (vs 42% May/Jun). The risk is that labor doesn't scale down with covers — locking in a July scheduling plan by June 15 protects contribution. The April win can be lost in one month of over-staffing.</p>
+        <div class="meta">Metric: July labor plan filed by 6/15. Cadence: Weekly review. Owner: GM + Finance</div>
+      </div>
+
+      <div class="prio">
+        <h3>Rosemary Rose · Priority 3 · <em>Flagged for review</em></h3>
+        <h2>Stand up Food/Bev cost reporting.</h2>
+        <p>April month F&amp;B revenue mix split (Food 16% / Bev 80%) is available from Toast, but Food Cost % and Beverage Cost % require monthly invoice detail — not provided in April source files for this build. Q1 had this detail. The work is restoring the monthly food/bev cost cadence before May closes.</p>
+        <div class="meta">Metric: Monthly Food/Bev Cost % filed by 6/10 (May close). Owner: GM + Finance</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="part">
+    <div class="kicker">Risks &amp; Opportunities · Flagged for review</div>
+    <h2 class="ph">Forward-looking summary across both businesses.</h2>
+
+    <div class="two">
+      <div class="card">
+        <h3>Risks</h3>
+        <h2>What could compress the forecast</h2>
+        <ul>
+          <li><strong>Rate flinch under forecast pressure.</strong> May forecast ADR is $61 below April actual. The temptation to add inventory at OTA-NREF rate codes to "hit forecast occupancy" erodes the ARI 111 position. Each 5-point ARI loss is ~$25 RevPAR.</li>
+          <li><strong>F&amp;B labor slippage.</strong> April's 48.5% prime cost is the win. Without explicit scheduling discipline, May/Jun could revert to the budget assumption (~57%). $20–30K monthly drag if it slips.</li>
+          <li><strong>Other Non-Op acceleration.</strong> $182.5K YTD against $0 budget. Cash Flow Before Debt is being compressed by ~$45K/month — set the ownership expectation explicitly.</li>
+          <li><strong>July contribution drop.</strong> Forecast July Net Income -$141.7K. Single-month dip back into the red. Operating plan needs to be filed before June 30.</li>
+          <li><strong>Sun/Mon MPI sticking at 72.</strong> Without packaging launch by mid-May, Sun-night MPI won't close — RGI plateaus.</li>
+          <li><strong>Location-category sentiment dip.</strong> 3.0 (-0.4 vs March) on small mention base. If May shows the same pattern, the signal is real — operational diagnosis needed.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <h3>Opportunities</h3>
+        <h2>Where May/Jul can outperform forecast</h2>
+        <ul>
+          <li><strong>ARI 115 stretch.</strong> April hit 111. May at 115 would add ~$30K of contribution. Demand-peak validation suggests this is reachable.</li>
+          <li><strong>F&amp;B prime cost held at 48%.</strong> Sustaining April's labor leverage through May/Jun = $40–60K of F&amp;B contribution above forecast.</li>
+          <li><strong>Sun/Mon packaging.</strong> Closing the 8-point Sun MPI gap = ~$20 RevPAR / ~$30K monthly revenue. Compounds direct-channel mix.</li>
+          <li><strong>Direct channel mix continued growth.</strong> April direct retail at 59.9% (vs 56% Q1). Lifting to 65% in summer saves $25–35K in OTA commissions.</li>
+          <li><strong>Penthouse pricing.</strong> April $1,500+ penthouse ADR validates the rate ceiling. June bookings priced ahead of the trajectory.</li>
+          <li><strong>Sentiment as marketing asset.</strong> Apr 4.89 / 100% Recommended / 100% response coverage is direct-booking creative. Lifting direct channel mix is the conversion.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CLOSING ===================== -->
+  <section class="part">
+    <div class="kicker">Closing Read</div>
+    <h2 class="ph">April was the breakout month. May is the test.</h2>
+    <p class="plede" style="max-width:920px;font-size:14.5px;">The Nickel cleared April with revenue ahead of plan ($1.07M vs $932K), NOI ahead of plan (+36%), ADR rank moving to #2 of 7 in the Charleston comp set, Survey NPS at 82, and the property's first standalone-profitable month of the inaugural year (+$101.5K Cash Flow After Debt). Rosemary Rose ran F&amp;B contribution margin at 46.3% on a 1,760-bps favorable prime-cost swing — the cleanest outlet read of the inaugural year. The Q2/Q3 work, framed in Section 10, is about converting April's wins from event into baseline: rate strength sustained into May/Jun, labor leverage made structural, and the residual Sun/Mon occupancy gap closed by midsummer. If May lands at or ahead of the forecast NOI of $471K, the property will have crossed Cash Flow After Debt for the second time in a row — and the ramp pattern shifts from "inaugural-year build" to "stabilized luxury." That's the read.</p>
+  </section>
+
+</div>
+
+<footer>
+  <span>The Nickel · Rosemary Rose · Period: April 2026 + May–Jul 2026 Forecast</span>
+  <span class="signature">— Internal Review · May 2026 —</span>
+  <span>Charleston, SC · 50 Keys</span>
+</footer>
+
+</body>
+</html>
